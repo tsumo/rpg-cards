@@ -104,6 +104,7 @@ export const Equipment = () => {
             "Вес: 1",
             "Цена: $400",
             "Свойства: бронебойное, однозарядное",
+            "+2 к проверкам тяжелой техники",
           ]}
           image="/weapons/watatsumi.png"
           columns="1fr 1.5fr"
@@ -352,7 +353,10 @@ export const Equipment = () => {
       </Card>
 
       <Card heading="Резак" headingWidth={110}>
-        <CardSideBySide stats={[]} image="/weapons/" />
+        <CardSideBySide
+          stats={["+2 к проверкам тяжелой техники", "Запас электроэнергии: 5"]}
+          image="/weapons/"
+        />
       </Card>
       <Card heading="" headingWidth={500}>
         <CardTextBlock>
@@ -418,8 +422,12 @@ export const Equipment = () => {
         </CardTextBlock>
       </Card>
 
-      <Card heading="" headingWidth={500}>
-        <CardSideBySide stats={[]} image="/protection/" />
+      <Card
+        heading="Порт. терминал связи PR-PUT"
+        headingWidth={570}
+        headingSize="2.9mm"
+      >
+        <CardSideBySide stats={[]} image="//" />
       </Card>
       <Card heading="" headingWidth={500}>
         <CardTextBlock>
@@ -427,8 +435,8 @@ export const Equipment = () => {
         </CardTextBlock>
       </Card>
 
-      <Card heading="" headingWidth={500}>
-        <CardSideBySide stats={[]} image="/protection/" />
+      <Card heading="Магнитофон серии C" headingWidth={400}>
+        <CardSideBySide stats={[]} image="//" />
       </Card>
       <Card heading="" headingWidth={500}>
         <CardTextBlock>
@@ -436,8 +444,196 @@ export const Equipment = () => {
         </CardTextBlock>
       </Card>
 
+      <Card heading="Часы «Самани» серии E" headingWidth={470}>
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
       <Card heading="" headingWidth={500}>
-        <CardSideBySide stats={[]} image="/protection/" />
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card heading="Личный передатчик" headingWidth={380}>
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
+      <Card heading="" headingWidth={500}>
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card heading="Маячок-идентификатор" headingWidth={445}>
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
+      <Card heading="" headingWidth={500}>
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card heading="Карта-передатчик" headingWidth={360}>
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
+      <Card heading="" headingWidth={500}>
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card heading="Планшет «Сигсон P-DAT»" headingWidth={495}>
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
+      <Card heading="" headingWidth={500}>
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card heading="Прибор диагностики" headingWidth={400}>
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
+      <Card heading="" headingWidth={500}>
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card heading="Оптический прицел" headingWidth={380}>
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
+      <Card heading="" headingWidth={500}>
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card heading="Фонарь дальнего света" headingWidth={475}>
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
+      <Card heading="" headingWidth={500}>
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card heading="Бинокль" headingWidth={160}>
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
+      <Card heading="" headingWidth={500}>
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card heading="Датчик движения M314" headingWidth={450}>
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
+      <Card heading="" headingWidth={500}>
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card heading="Датчик движения M316" headingWidth={450}>
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
+      <Card heading="" headingWidth={500}>
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card heading="Нашлемный прицел" headingWidth={360}>
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
+      <Card heading="" headingWidth={500}>
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card heading="Нейровизор" headingWidth={220}>
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
+      <Card heading="" headingWidth={500}>
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card
+        heading="Спектрограф. картограф «пёсик»"
+        headingWidth={625}
+        headingSize="2.9mm"
+      >
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
+      <Card heading="" headingWidth={500}>
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card heading="Технический ключ" headingWidth={360}>
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
+      <Card heading="" headingWidth={500}>
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card
+        heading="Ремкомплект для электроники"
+        headingWidth={590}
+        headingSize="3mm"
+      >
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
+      <Card heading="" headingWidth={500}>
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card heading="Личная аптечка" headingWidth={315}>
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
+      <Card heading="" headingWidth={500}>
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card heading="Хирургический набор" headingWidth={430}>
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
+      <Card heading="" headingWidth={500}>
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card heading="Таблетки «Бессонница»" headingWidth={470}>
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
+      <Card heading="" headingWidth={500}>
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card heading="Раствор «Гидрейт»" headingWidth={380}>
+        <CardSideBySide stats={[]} image="//" />
+      </Card>
+      <Card heading="" headingWidth={500}>
+        <CardTextBlock>
+          <Text></Text>
+        </CardTextBlock>
+      </Card>
+
+      <Card heading="Препарат «Напролев»" headingWidth={425}>
+        <CardSideBySide stats={[]} image="//" />
       </Card>
       <Card heading="" headingWidth={500}>
         <CardTextBlock>
