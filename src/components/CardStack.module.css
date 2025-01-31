@@ -1,0 +1,22 @@
+.block {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 2.5fr;
+  gap: 2mm;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2mm;
+}
+
+.image {
+  height: inherit;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}

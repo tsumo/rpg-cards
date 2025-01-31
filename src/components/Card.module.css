@@ -1,0 +1,21 @@
+.card {
+  width: 8.6cm;
+  height: 5.6cm;
+  border: 1px solid rgb(200, 200, 200);
+  margin: -0.5px;
+  position: relative;
+}
+
+.heading {
+  position: absolute;
+  top: 0.55cm;
+  right: 0.7cm;
+}
+
+.content {
+  position: absolute;
+  top: 1.1cm;
+  left: 0.66cm;
+  width: 7.3cm;
+  height: 3.9cm;
+}

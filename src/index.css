@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "OCR A";
+  src: url(/ocrabeckerrus_lat.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url(/gotham_medium.otf) format("opentype");
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin: 0;
+}
