@@ -5,3 +5,10 @@ export const partition = <T>(arr: T[], n: number): T[][] => {
   }
   return result;
 };
+
+export const constructFilter = (brightness?: number, contrast?: number) => {
+  let result = "";
+  if (brightness !== undefined) result = `brightness(${brightness})`;
+  if (contrast !== undefined) result = `${result} contrast(${contrast})`;
+  return result;
+};

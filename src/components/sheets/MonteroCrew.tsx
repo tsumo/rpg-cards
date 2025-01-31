@@ -21,6 +21,8 @@ export const MonteroCrew = () => {
           ]}
           image="/montero/miller.png"
           flipImage
+          brightness={1.75}
+          contrast={2.75}
         />
       </Card>
       <Card heading="Ванесса Миллер КОМАНДИР" headingWidth={520}>
@@ -54,6 +56,8 @@ export const MonteroCrew = () => {
             "Соперник: —",
           ]}
           image="/montero/davis.png"
+          brightness={1.95}
+          contrast={2.75}
         />
       </Card>
       <Card heading="Ли Дэвис ПИЛОТ" headingWidth={310}>
@@ -87,6 +91,8 @@ export const MonteroCrew = () => {
             "Соперник: Миллер",
           ]}
           image="/montero/rye.png"
+          brightness={1.7}
+          contrast={3.2}
         />
       </Card>
       <Card heading="Кейла Рай, РАБОТЯГА" headingWidth={420}>
@@ -117,6 +123,8 @@ export const MonteroCrew = () => {
             "Соперник: —",
           ]}
           image="/montero/cham.png"
+          brightness={2}
+          contrast={1.7}
           flipImage
         />
       </Card>
@@ -147,6 +155,8 @@ export const MonteroCrew = () => {
             "Соперник: Миллер",
           ]}
           image="/montero/wilson.png"
+          brightness={2.3}
+          contrast={2.7}
         />
       </Card>
       <Card heading="Джон Дж. Уилсон ПРЕДСТ. КОМП." headingWidth={640}>
