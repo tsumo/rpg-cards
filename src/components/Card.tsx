@@ -1,9 +1,12 @@
-import { ReactNode, useId, useMemo } from "react";
+import { CSSProperties, ReactNode, useId, useMemo } from "react";
 import { Text } from "./Text";
 import s from "./Card.module.css";
 
 const width = 860;
-const heigth = 560;
+const height = 550;
+const widthInCm = `${width / 100}cm`;
+const heightInCm = `${height / 100}cm`;
+
 const edgeOffset = 40;
 const cornerOffset = 30;
 const headingHeight = 50;
@@ -20,11 +23,11 @@ const createPath = (headingWidth: number) => {
   points.push({ x: width - edgeOffset - cornerOffset, y: edgeOffset });
   points.push({ x: width - edgeOffset, y: edgeOffset + cornerOffset });
   // bottom right corner
-  points.push({ x: width - edgeOffset, y: heigth - edgeOffset - cornerOffset });
-  points.push({ x: width - edgeOffset - cornerOffset, y: heigth - edgeOffset });
+  points.push({ x: width - edgeOffset, y: height - edgeOffset - cornerOffset });
+  points.push({ x: width - edgeOffset - cornerOffset, y: height - edgeOffset });
   // bottom left corner
-  points.push({ x: edgeOffset + cornerOffset, y: heigth - edgeOffset });
-  points.push({ x: edgeOffset, y: heigth - edgeOffset - cornerOffset });
+  points.push({ x: edgeOffset + cornerOffset, y: height - edgeOffset });
+  points.push({ x: edgeOffset, y: height - edgeOffset - cornerOffset });
   // top left corner
   points.push({ x: edgeOffset, y: edgeOffset + cornerOffset + headingHeight });
   points.push({ x: edgeOffset + cornerOffset, y: edgeOffset + headingHeight });
@@ -63,19 +66,26 @@ export const Card = ({
   const path = useMemo(() => createPath(headingWidth), [headingWidth]);
 
   return (
-    <div className={s.card}>
+    <div
+      className={s.card}
+      style={{ "--width": widthInCm, "--height": heightInCm } as CSSProperties}
+    >
       <Text ocr size={headingSize} className={s.heading}>
         {heading}
       </Text>
 
       <div className={s.content}>{children}</div>
 
-      <svg width="8.6cm" height="5.6cm" viewBox="0 0 860 560">
+      <svg
+        width={widthInCm}
+        height={heightInCm}
+        viewBox={`0 0 ${width} ${height}`}
+      >
         <defs>
           <path id={id} d={path} />
 
           <mask id={`${id}-mask`}>
-            <rect x={0} y={0} width={860} height={560} fill="white" />
+            <rect x={0} y={0} width={width} height={height} fill="white" />
             <use xlinkHref={`#${id}`} fill="black" />
           </mask>
         </defs>

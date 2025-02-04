@@ -1,6 +1,6 @@
 .card {
-  width: 8.6cm;
-  height: 5.6cm;
+  width: var(--width);
+  height: var(--height);
   border: 1px solid rgb(200, 200, 200);
   margin: -0.5px;
   position: relative;
