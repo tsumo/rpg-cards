@@ -1,13 +1,17 @@
-import s from "./CardStack.module.css";
+import s from "./CardTopImage.module.css";
 import { StatLine } from "./StatLine";
 
-type CardStackProps = {
+type CardTopImageProps = {
   statsLeft: string[];
   statsRight: string[];
   image: string;
 };
 
-export const CardStack = ({ statsLeft, statsRight, image }: CardStackProps) => {
+export const CardTopImage = ({
+  statsLeft,
+  statsRight,
+  image,
+}: CardTopImageProps) => {
   return (
     <div className={s.block}>
       <div className={s.stats}>

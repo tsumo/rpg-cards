@@ -1,6 +1,6 @@
 import { CardPair } from "../CardPair";
 import { CardAgenda } from "../CardAgenda";
-import { CardSideBySide } from "../CardSideBySide";
+import { CardRightImage } from "../CardRightImage";
 import { CardTextBlock } from "../CardTextBlock";
 import { SheetPartition } from "../SheetPartition";
 import { Text } from "../Text";
@@ -12,7 +12,7 @@ export const MonteroCrew = () => {
         heading="Ванесса Миллер КОМАНДИР"
         headingWidth={520}
         left={
-          <CardSideBySide
+          <CardRightImage
             stats={[
               "Капитан USCSS Montero",
               "Возраст: 46",
@@ -52,7 +52,7 @@ export const MonteroCrew = () => {
         heading="Ли Дэвис ПИЛОТ"
         headingWidth={310}
         left={
-          <CardSideBySide
+          <CardRightImage
             stats={[
               "Пилот USCSS Montero",
               "Возраст: 27",
@@ -92,7 +92,7 @@ export const MonteroCrew = () => {
         heading="Кейла Рай, РАБОТЯГА"
         headingWidth={420}
         left={
-          <CardSideBySide
+          <CardRightImage
             stats={[
               "Техник на USCSS Montero",
               "Возраст: 23",
@@ -129,7 +129,7 @@ export const MonteroCrew = () => {
         heading="Лайрон Чам РАБОТЯГА"
         headingWidth={420}
         left={
-          <CardSideBySide
+          <CardRightImage
             stats={[
               "Грузчик на USCSS Montero",
               "Возраст: 32",
@@ -165,7 +165,7 @@ export const MonteroCrew = () => {
         heading="Джон Дж. Уилсон ПРЕДСТ. КОМП."
         headingWidth={640}
         left={
-          <CardSideBySide
+          <CardRightImage
             stats={[
               "Корпоративный связной на USCSS Montero",
               "Возраст: 43",

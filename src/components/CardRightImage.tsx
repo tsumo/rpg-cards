@@ -1,9 +1,9 @@
 import clsx from "clsx";
-import s from "./CardSideBySide.module.css";
+import s from "./CardRightImage.module.css";
 import { StatLine } from "./StatLine";
 import { constructFilter } from "../utils";
 
-type CardSideBySideProps = {
+type CardRightImageProps = {
   stats: string[];
   image: string;
   flipImage?: boolean;
@@ -12,14 +12,14 @@ type CardSideBySideProps = {
   columns?: string;
 };
 
-export const CardSideBySide = ({
+export const CardRightImage = ({
   stats,
   image,
   flipImage,
   brightness,
   contrast,
   columns,
-}: CardSideBySideProps) => {
+}: CardRightImageProps) => {
   return (
     <div className={s.block} style={{ gridTemplateColumns: columns }}>
       <div>
