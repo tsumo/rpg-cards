@@ -49,7 +49,7 @@ const pathThickness = 5;
 const outlineOffset = 10;
 const outlineThickness = 4;
 
-type CardProps = {
+export type CardProps = {
   heading: string;
   headingWidth: number;
   headingSize?: string;
