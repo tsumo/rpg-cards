@@ -128,7 +128,19 @@ export const Equipment = () => {
 
       <CardPair
         heading="Имп. винтовка «Армат» M41A"
-        left={<CardRightImage stats={[]} image="/weapons/" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Качество: +1",
+              "Урон: 2",
+              "Дистанция: дальняя",
+              "Вес: 1",
+              "Цена: $1200",
+              "Свойства: автоматическое, бронебойное, подствольный гранатомет",
+            ]}
+            image="/weapons/"
+          />
+        }
         right={
           <CardTextBlock>
             <Text>
@@ -147,7 +159,19 @@ export const Equipment = () => {
 
       <CardPair
         heading="Импульсный автомат АК-4047"
-        left={<CardRightImage stats={[]} image="/weapons/" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Качество: –",
+              "Урон: 2",
+              "Дистанция: дальняя",
+              "Вес: 1",
+              "Цена: $500",
+              "Свойства: автоматическое",
+            ]}
+            image="/weapons/"
+          />
+        }
         right={
           <CardTextBlock>
             <Text>
@@ -163,7 +187,19 @@ export const Equipment = () => {
 
       <CardPair
         heading="Снайперская винтовка M42A"
-        left={<CardRightImage stats={[]} image="/weapons/" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Качество: +2",
+              "Урон: 2",
+              "Дистанция: предельная",
+              "Вес: 1",
+              "Цена: $1000",
+              "Свойства: бронебойное",
+            ]}
+            image="/weapons/"
+          />
+        }
         right={
           <CardTextBlock>
             <Text>
@@ -180,7 +216,19 @@ export const Equipment = () => {
       <CardPair
         heading="Помп. ружье «Армат» мод. 37A2"
         headingSize="2.9mm"
-        left={<CardRightImage stats={[]} image="/weapons/" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Качество: +2",
+              "Урон: 3",
+              "Дистанция: ближняя",
+              "Вес: 1",
+              "Цена: $500",
+              "Свойства: низкая пробивная способность",
+            ]}
+            image="/weapons/"
+          />
+        }
         right={
           <CardTextBlock>
             <Text>
@@ -194,7 +242,19 @@ export const Equipment = () => {
       <CardPair
         heading="Плазм. имп. винт. «Армат» XM99A"
         headingSize="2.9mm"
-        left={<CardRightImage stats={[]} image="/weapons/" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Качество: –",
+              "Урон: 4",
+              "Дистанция: предельная",
+              "Вес: 2",
+              "Цена: $20000",
+              "Свойства: бронебойное, запас электроэнергии 5",
+            ]}
+            image="/weapons/"
+          />
+        }
         right={
           <CardTextBlock>
             <Text>
@@ -250,7 +310,19 @@ export const Equipment = () => {
 
       <CardPair
         heading="Гранатомет «Армат» U1"
-        left={<CardRightImage stats={[]} image="/weapons/" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Качество: +1",
+              "Урон: взрыв 9",
+              "Дистанция: дальняя",
+              "Вес: 1/2",
+              "Цена: $600",
+              "Свойства: можно использовать разные виды гранат",
+            ]}
+            image="/weapons/"
+          />
+        }
         right={
           <CardTextBlock>
             <Text lineHeight={1.1}>
@@ -272,7 +344,19 @@ export const Equipment = () => {
       <CardPair
         heading="Тяж. имп. винт. «Армат» M41AE2"
         headingSize="2.9mm"
-        left={<CardRightImage stats={[]} image="/weapons/" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Качество: +1",
+              "Урон: 3",
+              "Дистанция: предельная",
+              "Вес: 2",
+              "Цена: $1500",
+              "Свойства: автоматическое, бронебойное",
+            ]}
+            image="/weapons/"
+          />
+        }
         right={
           <CardTextBlock>
             <Text>
@@ -288,7 +372,19 @@ export const Equipment = () => {
 
       <CardPair
         heading="Смарт-пулемет M56A2"
-        left={<CardRightImage stats={[]} image="/weapons/" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Качество: +3",
+              "Урон: 3",
+              "Дистанция: дальняя",
+              "Вес: 3",
+              "Цена: $6000",
+              "Свойства: автоматическое, бронебойное",
+            ]}
+            image="/weapons/"
+          />
+        }
         right={
           <CardTextBlock>
             <Text lineHeight={1.1}>
@@ -345,7 +441,19 @@ export const Equipment = () => {
       <CardPair
         heading="Автоматический пулемет UA 571-C"
         headingSize="2.9mm"
-        left={<CardRightImage stats={[]} image="/weapons/" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Качество: +2",
+              "Урон: 4",
+              "Дистанция: предельная",
+              "Вес: –",
+              "Цена: $12000",
+              "Свойства: автоматическое, бронебойное, дистанционный бой 8",
+            ]}
+            image="/weapons/"
+          />
+        }
         right={
           <CardTextBlock>
             <Text lineHeight={1.1}>
@@ -357,9 +465,8 @@ export const Equipment = () => {
               продвинутого распознавания, чтобы отличать друзей и врагов по
               нескольким параметрам. Без продвинутых настроек они уничтожают
               всё, что движется и излучает тепло. При активации автоматический
-              пулемёт сразу берёт под контроль сектор обстрела, его навык
-              ДИСТАНЦИОННОГО БОЯ равен 8. Им можно управлять издалека при помощи
-              нашлемного прицела.
+              пулемёт сразу берёт под контроль сектор обстрела. Им можно
+              управлять издалека при помощи нашлемного прицела.
             </Text>
           </CardTextBlock>
         }
@@ -367,7 +474,19 @@ export const Equipment = () => {
 
       <CardPair
         heading="Шоковые гранаты G2"
-        left={<CardRightImage stats={[]} image="/weapons/" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Качество: –",
+              "Урон: оглушение",
+              "Дистанция: средняя",
+              "Вес: 1/1",
+              "Цена: $400",
+              "Свойства: оглушающее, при встречной проверке действует модификатор -2",
+            ]}
+            image="/weapons/"
+          />
+        }
         right={
           <CardTextBlock>
             <Text lineHeight={1.1}>
@@ -392,12 +511,10 @@ export const Equipment = () => {
         left={
           <CardRightImage
             stats={[
-              "Качество: —",
-              "Урон: 1",
-              "Дистанция: нулевая",
-              "Вес: —",
-              "Цена: —",
-              "Свойства: низкая пробивная способность",
+              "качество: —",
+              "урон: 1",
+              "дистанция: нулевая",
+              "свойства: низкая пробивная способность",
             ]}
             image="/weapons/fist.png"
           />
@@ -426,7 +543,12 @@ export const Equipment = () => {
 
       <CardPair
         heading="Тупой предмет"
-        left={<CardRightImage stats={[]} image="/weapons/" />}
+        left={
+          <CardRightImage
+            stats={["Качество: +1", "Урон: 1", "Дистанция: нулевая", "Вес: 1"]}
+            image="/weapons/"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -436,7 +558,18 @@ export const Equipment = () => {
 
       <CardPair
         heading="Нож"
-        left={<CardRightImage stats={[]} image="/weapons/" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Качество: –",
+              "Урон: 2",
+              "Дистанция: нулевая",
+              "Вес: 1/2",
+              "Цена: $50",
+            ]}
+            image="/weapons/"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -446,7 +579,19 @@ export const Equipment = () => {
 
       <CardPair
         heading="Электрошоковая дубинка"
-        left={<CardRightImage stats={[]} image="/weapons/" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Качество: +1",
+              "Урон: 1",
+              "Дистанция: нулевая",
+              "Вес: 1/2",
+              "Цена: $80",
+              "Свойства: запас электроэнергии 5, оглушающее",
+            ]}
+            image="/weapons/"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -459,8 +604,13 @@ export const Equipment = () => {
         left={
           <CardRightImage
             stats={[
+              "Качество: –",
+              "Урон: 3",
+              "Дистанция: нулевая",
+              "Вес: 1",
+              "Цена: $300",
+              "Свойства: бронебойное, запас электроэнергии 5",
               "+2 к проверкам тяжелой техники",
-              "Запас электроэнергии: 5",
             ]}
             image="/weapons/"
           />
@@ -481,7 +631,7 @@ export const Equipment = () => {
               "Запас воздуха: —",
               "Вес: 1",
               "Цена: $1200",
-              "Свойства: встроенный коммуникатор",
+              "Встроенный коммуникатор",
             ]}
             image="/protection/m3.png"
             brightness={1.5}
@@ -544,7 +694,7 @@ export const Equipment = () => {
               "Запас воздуха: 4",
               "Вес: 2",
               "Цена: $2000",
-              "Свойства: -1 при проверках проворства",
+              "-1 при проверках проворства",
             ]}
             image="/protection/mk35.png"
           />
@@ -559,10 +709,7 @@ export const Equipment = () => {
               Мк.35 – довольно недорогой скафандр. В космосе он человека
               защитит, но когда тот доберётся до шлюза, то не сможет сразу же
               зайти внутрь корабля или станции, а должен будет провести
-              некоторое время в барокамере. Короче, скафандр – отстой, но если
-              выбирать между ним и дружелюбием космической пустоты, то лучше
-              заткнуться и натянуть «спасательный жилет». Считается тяжёлым
-              предметом.
+              некоторое время в барокамере. Считается тяжёлым предметом.
             </Text>
           </CardTextBlock>
         }
@@ -601,7 +748,18 @@ export const Equipment = () => {
 
       <CardPair
         heading="APE-костюм Weyland-Yutani"
-        left={<CardRightImage stats={[]} image="/protection/" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Класс защиты: 3",
+              "Запас воздуха: 4",
+              "Вес: 1",
+              "Цена: $5000",
+              "+3 при проверках выживания",
+            ]}
+            image="/protection/"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -618,7 +776,7 @@ export const Equipment = () => {
               "Запас воздуха: –",
               "Вес: –",
               "Цена: $50000",
-              "Свойства: +3 при проверках тяжелой техники и ближнего боя",
+              "+3 при проверках тяжелой техники и ближнего боя",
             ]}
             image="/protection/p5000.png"
             brightness={1.2}
@@ -644,7 +802,16 @@ export const Equipment = () => {
       <CardPair
         heading="Порт. терминал связи PR-PUT"
         headingSize="2.9mm"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Вес: 1",
+              "Цена: $9000",
+              "Позволяет управлять кораблем удаленно (проверка информатики)",
+            ]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -654,7 +821,16 @@ export const Equipment = () => {
 
       <CardPair
         heading="Магнитофон серии C"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Вес: 1/2",
+              "Цена: $50-100",
+              "Позволяет записывать и воспроизводить музыку (+1 к проверкам влияния)",
+            ]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -664,7 +840,16 @@ export const Equipment = () => {
 
       <CardPair
         heading="Часы «Самани» серии E"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Вес: 0",
+              "Цена: $50",
+              "Показывают время, уровень кислорода и внешнего давления (+1 к проверкам выживания)",
+            ]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -674,7 +859,16 @@ export const Equipment = () => {
 
       <CardPair
         heading="Личный передатчик"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Вес: 0",
+              "Цена: $100",
+              "Отслеживает местоположение и жизненные показатели владельца",
+            ]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -684,7 +878,16 @@ export const Equipment = () => {
 
       <CardPair
         heading="Маячок-идентификатор"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Вес: 0",
+              "Цена: $250",
+              "Защищает от огня дружественных турелей",
+            ]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -694,7 +897,12 @@ export const Equipment = () => {
 
       <CardPair
         heading="Карта-передатчик"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={["Вес: 0", "Цена: $50", "Пересылает аудиовизуальные данные"]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -704,7 +912,16 @@ export const Equipment = () => {
 
       <CardPair
         heading="Планшет «Сигсон P-DAT»"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Вес: 1/2",
+              "Цена: $500",
+              "Помогает команде координировать свои действия",
+            ]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -714,7 +931,16 @@ export const Equipment = () => {
 
       <CardPair
         heading="Прибор диагностики"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Вес: 1",
+              "Цена: $300",
+              "Выявляет неполадки в компьютерных системах (+2 к проверкам информатики)",
+            ]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -724,7 +950,16 @@ export const Equipment = () => {
 
       <CardPair
         heading="Оптический прицел"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Вес: 0",
+              "Цена: $60",
+              "Увеличивает дистанцию стрельбы на 1 ступень",
+            ]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -734,7 +969,12 @@ export const Equipment = () => {
 
       <CardPair
         heading="Фонарь дальнего света"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={["Вес: 1/2", "Цена: $45", "Освещает тёмную область"]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -744,7 +984,16 @@ export const Equipment = () => {
 
       <CardPair
         heading="Бинокль"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Вес: 1/2",
+              "Цена: $100",
+              "+2 к проверкам наблюдательности",
+            ]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -754,7 +1003,16 @@ export const Equipment = () => {
 
       <CardPair
         heading="Датчик движения M314"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Вес: 1",
+              "Цена: $1200",
+              "В помещениях засекает движение в рамках дальней дистанции. См. стр. 86.",
+            ]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -764,7 +1022,16 @@ export const Equipment = () => {
 
       <CardPair
         heading="Датчик движения M316"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Вес: 0",
+              "Цена: $3000",
+              "В помещениях засекает движение в рамках средней дистанции. См. стр. 86.",
+            ]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -774,7 +1041,16 @@ export const Equipment = () => {
 
       <CardPair
         heading="Нашлемный прицел"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Вес: 1/2",
+              "Цена: $200",
+              "Позволяет удалённо управлять стационарным пулемётом",
+            ]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -784,7 +1060,16 @@ export const Equipment = () => {
 
       <CardPair
         heading="Нейровизор"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Вес: 1",
+              "Цена: $10000",
+              "Позволяет следить за снами персонажей в гиперсне",
+            ]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -795,7 +1080,16 @@ export const Equipment = () => {
       <CardPair
         heading="Спектрограф. картограф «пёсик»"
         headingSize="2.9mm"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Вес: 1",
+              "Цена: $50000",
+              "Сканирует одну область за раунд",
+            ]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -805,7 +1099,12 @@ export const Equipment = () => {
 
       <CardPair
         heading="Технический ключ"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={["Вес: 1", "Цена: $150", "+1 к проверкам тяжелой техники"]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -816,7 +1115,12 @@ export const Equipment = () => {
       <CardPair
         heading="Ремкомплект для электроники"
         headingSize="3mm"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={["Вес: 1/2", "$250", "+1 к проверкам информатики"]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -826,7 +1130,12 @@ export const Equipment = () => {
 
       <CardPair
         heading="Личная аптечка"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={["Вес: 1/4", "Цена: $50", "+2 к проверкам медпомощи"]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -836,7 +1145,16 @@ export const Equipment = () => {
 
       <CardPair
         heading="Хирургический набор"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Вес: 1/2",
+              "Цена: $25-200",
+              "+1 к проверкам медпомощи, когда пытаешься спасти кого-нибудь (в том числе себя) от смерти",
+            ]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -846,7 +1164,12 @@ export const Equipment = () => {
 
       <CardPair
         heading="Таблетки «Бессонница»"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={["Вес: 0", "Цена: $2", "+1 к уровню стресса"]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -856,7 +1179,16 @@ export const Equipment = () => {
 
       <CardPair
         heading="Раствор «Гидрейт»"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={[
+              "Вес: 0",
+              "Цена: $5",
+              "Устраняет эффекты жажды после гиперсна",
+            ]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
@@ -866,7 +1198,12 @@ export const Equipment = () => {
 
       <CardPair
         heading="Препарат «Напролев»"
-        left={<CardRightImage stats={[]} image="//" />}
+        left={
+          <CardRightImage
+            stats={["Вес: 0", "Цена: $20", "Снижает уровень стресса до нуля"]}
+            image="//"
+          />
+        }
         right={
           <CardTextBlock>
             <Text></Text>
