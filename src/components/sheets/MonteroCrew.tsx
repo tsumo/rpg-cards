@@ -10,7 +10,6 @@ export const MonteroCrew = () => {
     <SheetPartition n={5}>
       <CardPair
         heading="Ванесса Миллер КОМАНДИР"
-        headingWidth={520}
         left={
           <CardRightImage
             stats={[
@@ -50,7 +49,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Ли Дэвис ПИЛОТ"
-        headingWidth={310}
         left={
           <CardRightImage
             stats={[
@@ -90,7 +88,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Кейла Рай, РАБОТЯГА"
-        headingWidth={420}
         left={
           <CardRightImage
             stats={[
@@ -127,7 +124,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Лайрон Чам РАБОТЯГА"
-        headingWidth={420}
         left={
           <CardRightImage
             stats={[
@@ -163,7 +159,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Джон Дж. Уилсон ПРЕДСТ. КОМП."
-        headingWidth={640}
         left={
           <CardRightImage
             stats={[
@@ -198,7 +193,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Ванесса Миллер КОМАНДИР"
-        headingWidth={520}
         left={<CardAgenda text="Личная цель АКТ 1" />}
         right={
           <CardTextBlock>
@@ -212,7 +206,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Ванесса Миллер КОМАНДИР"
-        headingWidth={520}
         left={<CardAgenda text="Личная цель АКТ 2" />}
         right={
           <CardTextBlock>
@@ -227,7 +220,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Ванесса Миллер КОМАНДИР"
-        headingWidth={520}
         left={<CardAgenda text="Личная цель АКТ 3" />}
         right={
           <CardTextBlock>
@@ -241,7 +233,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Ли Дэвис ПИЛОТ"
-        headingWidth={310}
         left={<CardAgenda text="Личная цель АКТ 1" />}
         right={
           <CardTextBlock>
@@ -255,7 +246,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Ли Дэвис ПИЛОТ"
-        headingWidth={310}
         left={<CardAgenda text="Личная цель АКТ 2" />}
         right={
           <CardTextBlock>
@@ -269,7 +259,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Ли Дэвис ПИЛОТ"
-        headingWidth={310}
         left={<CardAgenda text="Личная цель АКТ 3" />}
         right={
           <CardTextBlock>
@@ -284,7 +273,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Кейла Рай, РАБОТЯГА"
-        headingWidth={420}
         left={<CardAgenda text="Личная цель АКТ 1" />}
         right={
           <CardTextBlock>
@@ -298,7 +286,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Кейла Рай, РАБОТЯГА"
-        headingWidth={420}
         left={<CardAgenda text="Личная цель АКТ 2" />}
         right={
           <CardTextBlock>
@@ -313,7 +300,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Кейла Рай, РАБОТЯГА"
-        headingWidth={420}
         left={<CardAgenda text="Личная цель АКТ 3" />}
         right={
           <CardTextBlock>
@@ -327,7 +313,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Лайрон Чам РАБОТЯГА"
-        headingWidth={420}
         left={<CardAgenda text="Личная цель АКТ 1" />}
         right={
           <CardTextBlock>
@@ -340,7 +325,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Лайрон Чам РАБОТЯГА"
-        headingWidth={420}
         left={<CardAgenda text="Личная цель АКТ 2" />}
         right={
           <CardTextBlock>
@@ -353,7 +337,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Лайрон Чам РАБОТЯГА"
-        headingWidth={420}
         left={<CardAgenda text="Личная цель АКТ 3" />}
         right={
           <CardTextBlock>
@@ -367,7 +350,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Джон Дж. Уилсон ПРЕДСТ. КОМП."
-        headingWidth={640}
         left={<CardAgenda text="Личная цель АКТ 1" />}
         right={
           <CardTextBlock>
@@ -384,7 +366,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Джон Дж. Уилсон ПРЕДСТ. КОМП."
-        headingWidth={640}
         left={<CardAgenda text="Личная цель АКТ 2" />}
         right={
           <CardTextBlock>
@@ -401,7 +382,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Джон Дж. Уилсон ПРЕДСТ. КОМП."
-        headingWidth={640}
         left={<CardAgenda text="Личная цель АКТ 3" />}
         right={
           <CardTextBlock>
@@ -416,7 +396,6 @@ export const MonteroCrew = () => {
 
       <CardPair
         heading="Особое распоряжение 966"
-        headingWidth={515}
         left={<CardAgenda text="942/T2-009R – КОММ. 01500" />}
         right={
           <CardTextBlock>

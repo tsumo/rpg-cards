@@ -10,7 +10,6 @@ export const Equipment = () => {
     <SheetPartition n={5}>
       <CardPair
         heading="Табельный пистолет M4A3"
-        headingWidth={510}
         left={
           <CardRightImage
             stats={[
@@ -37,7 +36,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Револьвер «Магнум 357»"
-        headingWidth={490}
         left={
           <CardRightImage
             stats={[
@@ -64,7 +62,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Лаз. пист. «Рексим» EVA RXF-M5"
-        headingWidth={620}
         headingSize="2.9mm"
         left={
           <CardRightImage
@@ -98,7 +95,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Креп. пист. «Ватацуми» DV-303"
-        headingWidth={610}
         headingSize="2.9mm"
         left={
           <CardRightImage
@@ -132,7 +128,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Имп. винтовка «Армат» M41A"
-        headingWidth={580}
         left={<CardRightImage stats={[]} image="/weapons/" />}
         right={
           <CardTextBlock>
@@ -152,7 +147,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Импульсный автомат АК-4047"
-        headingWidth={580}
         left={<CardRightImage stats={[]} image="/weapons/" />}
         right={
           <CardTextBlock>
@@ -169,7 +163,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Снайперская винтовка M42A"
-        headingWidth={555}
         left={<CardRightImage stats={[]} image="/weapons/" />}
         right={
           <CardTextBlock>
@@ -186,7 +179,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Помп. ружье «Армат» мод. 37A2"
-        headingWidth={605}
         headingSize="2.9mm"
         left={<CardRightImage stats={[]} image="/weapons/" />}
         right={
@@ -201,7 +193,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Плазм. имп. винт. «Армат» XM99A"
-        headingWidth={640}
         headingSize="2.9mm"
         left={<CardRightImage stats={[]} image="/weapons/" />}
         right={
@@ -224,7 +215,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Гарп. ружье «СпейсСаб» ASSO-400"
-        headingWidth={645}
         headingSize="2.9mm"
         left={
           <CardTopImage
@@ -260,7 +250,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Гранатомет «Армат» U1"
-        headingWidth={470}
         left={<CardRightImage stats={[]} image="/weapons/" />}
         right={
           <CardTextBlock>
@@ -282,7 +271,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Тяж. имп. винт. «Армат» M41AE2"
-        headingWidth={620}
         headingSize="2.9mm"
         left={<CardRightImage stats={[]} image="/weapons/" />}
         right={
@@ -300,7 +288,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Смарт-пулемет M56A2"
-        headingWidth={420}
         left={<CardRightImage stats={[]} image="/weapons/" />}
         right={
           <CardTextBlock>
@@ -323,7 +310,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Огнемет M420"
-        headingWidth={265}
         left={
           <CardTopImage
             statsLeft={[
@@ -358,7 +344,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Автоматический пулемет UA 571-C"
-        headingWidth={640}
         headingSize="2.9mm"
         left={<CardRightImage stats={[]} image="/weapons/" />}
         right={
@@ -382,7 +367,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Шоковые гранаты G2"
-        headingWidth={400}
         left={<CardRightImage stats={[]} image="/weapons/" />}
         right={
           <CardTextBlock>
@@ -405,7 +389,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Атака голыми руками"
-        headingWidth={420}
         left={
           <CardRightImage
             stats={[
@@ -443,7 +426,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Тупой предмет"
-        headingWidth={290}
         left={<CardRightImage stats={[]} image="/weapons/" />}
         right={
           <CardTextBlock>
@@ -454,7 +436,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Нож"
-        headingWidth={70}
         left={<CardRightImage stats={[]} image="/weapons/" />}
         right={
           <CardTextBlock>
@@ -465,7 +446,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Электрошоковая дубинка"
-        headingWidth={490}
         left={<CardRightImage stats={[]} image="/weapons/" />}
         right={
           <CardTextBlock>
@@ -476,7 +456,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Резак"
-        headingWidth={110}
         left={
           <CardRightImage
             stats={[
@@ -495,7 +474,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Военный бронежилет M3"
-        headingWidth={470}
         left={
           <CardRightImage
             stats={[
@@ -528,7 +506,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Скафандр IRC Mk.50"
-        headingWidth={400}
         left={
           <CardRightImage
             stats={[
@@ -560,7 +537,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Скафандр IRC Mk.35"
-        headingWidth={400}
         left={
           <CardRightImage
             stats={[
@@ -594,7 +570,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Костюм полного жизнеоб. «Эко»"
-        headingWidth={600}
         headingSize="2.9mm"
         left={
           <CardRightImage
@@ -626,7 +601,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="APE-костюм Weyland-Yutani"
-        headingWidth={555}
         left={<CardRightImage stats={[]} image="/protection/" />}
         right={
           <CardTextBlock>
@@ -637,7 +611,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Погрузчик P-5000"
-        headingWidth={360}
         left={
           <CardRightImage
             stats={[
@@ -670,7 +643,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Порт. терминал связи PR-PUT"
-        headingWidth={570}
         headingSize="2.9mm"
         left={<CardRightImage stats={[]} image="//" />}
         right={
@@ -682,7 +654,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Магнитофон серии C"
-        headingWidth={400}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>
@@ -693,7 +664,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Часы «Самани» серии E"
-        headingWidth={470}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>
@@ -704,7 +674,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Личный передатчик"
-        headingWidth={380}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>
@@ -715,7 +684,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Маячок-идентификатор"
-        headingWidth={445}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>
@@ -726,7 +694,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Карта-передатчик"
-        headingWidth={360}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>
@@ -737,7 +704,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Планшет «Сигсон P-DAT»"
-        headingWidth={495}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>
@@ -748,7 +714,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Прибор диагностики"
-        headingWidth={400}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>
@@ -759,7 +724,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Оптический прицел"
-        headingWidth={380}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>
@@ -770,7 +734,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Фонарь дальнего света"
-        headingWidth={475}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>
@@ -781,7 +744,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Бинокль"
-        headingWidth={160}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>
@@ -792,7 +754,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Датчик движения M314"
-        headingWidth={450}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>
@@ -803,7 +764,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Датчик движения M316"
-        headingWidth={450}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>
@@ -814,7 +774,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Нашлемный прицел"
-        headingWidth={360}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>
@@ -825,7 +784,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Нейровизор"
-        headingWidth={220}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>
@@ -836,7 +794,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Спектрограф. картограф «пёсик»"
-        headingWidth={625}
         headingSize="2.9mm"
         left={<CardRightImage stats={[]} image="//" />}
         right={
@@ -848,7 +805,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Технический ключ"
-        headingWidth={360}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>
@@ -859,7 +815,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Ремкомплект для электроники"
-        headingWidth={590}
         headingSize="3mm"
         left={<CardRightImage stats={[]} image="//" />}
         right={
@@ -871,7 +826,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Личная аптечка"
-        headingWidth={315}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>
@@ -882,7 +836,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Хирургический набор"
-        headingWidth={430}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>
@@ -893,7 +846,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Таблетки «Бессонница»"
-        headingWidth={470}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>
@@ -904,7 +856,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Раствор «Гидрейт»"
-        headingWidth={380}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>
@@ -915,7 +866,6 @@ export const Equipment = () => {
 
       <CardPair
         heading="Препарат «Напролев»"
-        headingWidth={425}
         left={<CardRightImage stats={[]} image="//" />}
         right={
           <CardTextBlock>

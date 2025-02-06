@@ -1,4 +1,5 @@
 import { CSSProperties, ReactNode, useId, useMemo } from "react";
+import useMeasure from "react-use-measure";
 import { Text } from "./Text";
 import s from "./Card.module.css";
 
@@ -51,26 +52,30 @@ const outlineThickness = 4;
 
 export type CardProps = {
   heading: string;
-  headingWidth: number;
   headingSize?: string;
   children?: ReactNode;
 };
 
 export const Card = ({
   heading,
-  headingWidth,
   headingSize = "3.1mm",
   children,
 }: CardProps) => {
   const id = useId();
-  const path = useMemo(() => createPath(headingWidth), [headingWidth]);
+
+  const [ref, bounds] = useMeasure();
+
+  const path = useMemo(
+    () => createPath(bounds.width * window.devicePixelRatio * 1.32),
+    [bounds.width]
+  );
 
   return (
     <div
       className={s.card}
       style={{ "--width": widthInCm, "--height": heightInCm } as CSSProperties}
     >
-      <Text ocr size={headingSize} className={s.heading}>
+      <Text ocr size={headingSize} ref={ref} className={s.heading}>
         {heading}
       </Text>
 
