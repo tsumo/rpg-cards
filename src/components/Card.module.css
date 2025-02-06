@@ -16,6 +16,6 @@
   position: absolute;
   top: 1.1cm;
   left: 0.66cm;
-  width: 7.3cm;
-  height: 3.9cm;
+  width: calc(var(--width) - 1.3cm);
+  height: calc(var(--height) - 1.6cm);
 }
