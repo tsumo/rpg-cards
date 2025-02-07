@@ -129,16 +129,18 @@ export const Equipment = () => {
       <CardPair
         heading="Имп. винтовка «Армат» M41A"
         left={
-          <CardRightImage
-            stats={[
+          <CardTopImage
+            statsLeft={[
               "Качество: +1",
               "Урон: 2",
               "Дистанция: дальняя",
               "Вес: 1",
+            ]}
+            statsRight={[
               "Цена: $1200",
               "Свойства: автоматическое, бронебойное, подствольный гранатомет",
             ]}
-            image="/weapons/"
+            image="/weapons/m4a1.png"
           />
         }
         right={
@@ -160,16 +162,15 @@ export const Equipment = () => {
       <CardPair
         heading="Импульсный автомат АК-4047"
         left={
-          <CardRightImage
-            stats={[
+          <CardTopImage
+            statsLeft={[
               "Качество: –",
               "Урон: 2",
               "Дистанция: дальняя",
               "Вес: 1",
-              "Цена: $500",
-              "Свойства: автоматическое",
             ]}
-            image="/weapons/"
+            statsRight={["Цена: $500", "Свойства: автоматическое"]}
+            image="/weapons/ak4047.png"
           />
         }
         right={
@@ -188,16 +189,15 @@ export const Equipment = () => {
       <CardPair
         heading="Снайперская винтовка M42A"
         left={
-          <CardRightImage
-            stats={[
+          <CardTopImage
+            statsLeft={[
               "Качество: +2",
               "Урон: 2",
               "Дистанция: предельная",
               "Вес: 1",
-              "Цена: $1000",
-              "Свойства: бронебойное",
             ]}
-            image="/weapons/"
+            statsRight={["Цена: $1000", "Свойства: бронебойное"]}
+            image="/weapons/m4a2.png"
           />
         }
         right={
@@ -217,16 +217,18 @@ export const Equipment = () => {
         heading="Помп. ружье «Армат» мод. 37A2"
         headingSize="2.9mm"
         left={
-          <CardRightImage
-            stats={[
+          <CardTopImage
+            statsLeft={[
               "Качество: +2",
               "Урон: 3",
               "Дистанция: ближняя",
               "Вес: 1",
+            ]}
+            statsRight={[
               "Цена: $500",
               "Свойства: низкая пробивная способность",
             ]}
-            image="/weapons/"
+            image="/weapons/37a2.png"
           />
         }
         right={
@@ -243,16 +245,18 @@ export const Equipment = () => {
         heading="Плазм. имп. винт. «Армат» XM99A"
         headingSize="2.9mm"
         left={
-          <CardRightImage
-            stats={[
+          <CardTopImage
+            statsLeft={[
               "Качество: –",
               "Урон: 4",
               "Дистанция: предельная",
               "Вес: 2",
+            ]}
+            statsRight={[
               "Цена: $20000",
               "Свойства: бронебойное, запас электроэнергии 5",
             ]}
-            image="/weapons/"
+            image="/weapons/xm99a.png"
           />
         }
         right={
@@ -311,16 +315,18 @@ export const Equipment = () => {
       <CardPair
         heading="Гранатомет «Армат» U1"
         left={
-          <CardRightImage
-            stats={[
+          <CardTopImage
+            statsLeft={[
               "Качество: +1",
               "Урон: взрыв 9",
               "Дистанция: дальняя",
               "Вес: 1/2",
+            ]}
+            statsRight={[
               "Цена: $600",
               "Свойства: можно использовать разные виды гранат",
             ]}
-            image="/weapons/"
+            image="/weapons/u1.png"
           />
         }
         right={
@@ -345,16 +351,18 @@ export const Equipment = () => {
         heading="Тяж. имп. винт. «Армат» M41AE2"
         headingSize="2.9mm"
         left={
-          <CardRightImage
-            stats={[
+          <CardTopImage
+            statsLeft={[
               "Качество: +1",
               "Урон: 3",
               "Дистанция: предельная",
               "Вес: 2",
+            ]}
+            statsRight={[
               "Цена: $1500",
               "Свойства: автоматическое, бронебойное",
             ]}
-            image="/weapons/"
+            image="/weapons/m41ae2.png"
           />
         }
         right={
@@ -373,16 +381,18 @@ export const Equipment = () => {
       <CardPair
         heading="Смарт-пулемет M56A2"
         left={
-          <CardRightImage
-            stats={[
+          <CardTopImage
+            statsLeft={[
               "Качество: +3",
               "Урон: 3",
               "Дистанция: дальняя",
               "Вес: 3",
+            ]}
+            statsRight={[
               "Цена: $6000",
               "Свойства: автоматическое, бронебойное",
             ]}
-            image="/weapons/"
+            image="/weapons/m56a2.png"
           />
         }
         right={
@@ -451,7 +461,7 @@ export const Equipment = () => {
               "Цена: $12000",
               "Свойства: автоматическое, бронебойное, дистанционный бой 8",
             ]}
-            image="/weapons/"
+            image="/weapons/ua571c.png"
           />
         }
         right={
@@ -484,7 +494,7 @@ export const Equipment = () => {
               "Цена: $400",
               "Свойства: оглушающее, при встречной проверке действует модификатор -2",
             ]}
-            image="/weapons/"
+            image="/weapons/g2.png"
           />
         }
         right={
@@ -546,7 +556,7 @@ export const Equipment = () => {
         left={
           <CardRightImage
             stats={["Качество: +1", "Урон: 1", "Дистанция: нулевая", "Вес: 1"]}
-            image="/weapons/"
+            image="/weapons/blunt.png"
           />
         }
         right={
@@ -578,7 +588,7 @@ export const Equipment = () => {
               "Вес: 1/2",
               "Цена: $50",
             ]}
-            image="/weapons/"
+            image="/weapons/knife.png"
           />
         }
         right={
@@ -602,16 +612,18 @@ export const Equipment = () => {
       <CardPair
         heading="Электрошоковая дубинка"
         left={
-          <CardRightImage
-            stats={[
+          <CardTopImage
+            statsLeft={[
               "Качество: +1",
               "Урон: 1",
               "Дистанция: нулевая",
               "Вес: 1/2",
+            ]}
+            statsRight={[
               "Цена: $80",
               "Свойства: запас электроэнергии 5, оглушающее",
             ]}
-            image="/weapons/"
+            image="/weapons/prod.png"
           />
         }
         right={
@@ -645,7 +657,9 @@ export const Equipment = () => {
               "Свойства: бронебойное, запас электроэнергии 5",
               "+2 к проверкам тяжелой техники",
             ]}
-            image="/weapons/"
+            image="/weapons/torch.png"
+            brightness={2.5}
+            contrast={1.8}
           />
         }
         right={
@@ -798,7 +812,8 @@ export const Equipment = () => {
               "Цена: $5000",
               "+3 при проверках выживания",
             ]}
-            image="/protection/"
+            image="/protection/ape.png"
+            flipImage
           />
         }
         right={
@@ -860,7 +875,7 @@ export const Equipment = () => {
               "Цена: $9000",
               "Позволяет управлять кораблем удаленно (проверка информатики)",
             ]}
-            image="//"
+            image="/gear/prput.png"
           />
         }
         right={
@@ -885,7 +900,9 @@ export const Equipment = () => {
               "Цена: $50-100",
               "Позволяет записывать и воспроизводить музыку (+1 к проверкам влияния)",
             ]}
-            image="//"
+            image="/gear/recorder.png"
+            brightness={1.8}
+            contrast={1.5}
           />
         }
         right={
@@ -912,7 +929,8 @@ export const Equipment = () => {
               "Цена: $50",
               "Показывают время, уровень кислорода и внешнего давления (+1 к проверкам выживания)",
             ]}
-            image="//"
+            image="/gear/watch.png"
+            flipImage
           />
         }
         right={
