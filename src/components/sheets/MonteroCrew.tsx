@@ -7,7 +7,7 @@ import { Text } from "../Text";
 
 export const MonteroCrew = () => {
   return (
-    <SheetPartition n={5}>
+    <SheetPartition itemsInRow={2} partitionBy={5}>
       <CardPair
         heading="Ванесса Миллер КОМАНДИР"
         left={

@@ -7,7 +7,7 @@ import { Text } from "../Text";
 
 export const Equipment = () => {
   return (
-    <SheetPartition n={5}>
+    <SheetPartition itemsInRow={2} partitionBy={5}>
       <CardPair
         heading="Табельный пистолет M4A3"
         left={
