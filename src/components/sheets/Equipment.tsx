@@ -956,7 +956,7 @@ export const Equipment = () => {
               "Цена: $100",
               "Отслеживает местоположение и жизненные показатели владельца",
             ]}
-            image="//"
+            image="/gear/pdt.png"
           />
         }
         right={
@@ -982,7 +982,7 @@ export const Equipment = () => {
               "Цена: $250",
               "Защищает от огня дружественных турелей",
             ]}
-            image="//"
+            image="/gear/iff.png"
           />
         }
         right={
@@ -1005,7 +1005,7 @@ export const Equipment = () => {
         left={
           <CardRightImage
             stats={["Вес: 0", "Цена: $50", "Пересылает аудиовизуальные данные"]}
-            image="//"
+            image="/gear/dtc.png"
           />
         }
         right={
@@ -1031,7 +1031,8 @@ export const Equipment = () => {
               "Цена: $500",
               "Помогает команде координировать свои действия",
             ]}
-            image="//"
+            image="/gear/pdat.png"
+            flipImage
           />
         }
         right={
@@ -1055,7 +1056,9 @@ export const Equipment = () => {
               "Цена: $300",
               "Выявляет неполадки в компьютерных системах (+2 к проверкам информатики)",
             ]}
-            image="//"
+            image="/gear/ssdd.png"
+            brightness={2.9}
+            contrast={1.5}
           />
         }
         right={
@@ -1080,7 +1083,7 @@ export const Equipment = () => {
               "Цена: $60",
               "Увеличивает дистанцию стрельбы на 1 ступень",
             ]}
-            image="//"
+            image="/gear/sights.png"
           />
         }
         right={
@@ -1102,7 +1105,7 @@ export const Equipment = () => {
         left={
           <CardRightImage
             stats={["Вес: 1/2", "Цена: $45", "Освещает тёмную область"]}
-            image="//"
+            image="/gear/flashlight.png"
           />
         }
         right={
@@ -1124,7 +1127,7 @@ export const Equipment = () => {
               "Цена: $100",
               "+2 к проверкам наблюдательности",
             ]}
-            image="//"
+            image="/gear/binoculars.png"
           />
         }
         right={
@@ -1147,7 +1150,7 @@ export const Equipment = () => {
               "В помещениях засекает движение в рамках дальней дистанции. См. стр. 86.",
               "Запах электроэнергии 5",
             ]}
-            image="//"
+            image="/gear/m314.png"
           />
         }
         right={
@@ -1177,7 +1180,8 @@ export const Equipment = () => {
               "В помещениях засекает движение в рамках средней дистанции. См. стр. 86.",
               "Запах электроэнергии 3",
             ]}
-            image="//"
+            image="/gear/m316.png"
+            flipImage
           />
         }
         right={
@@ -1205,7 +1209,7 @@ export const Equipment = () => {
               "Цена: $200",
               "Позволяет удалённо управлять стационарным пулемётом",
             ]}
-            image="//"
+            image="/gear/headsight.png"
           />
         }
         right={
@@ -1228,7 +1232,7 @@ export const Equipment = () => {
               "Цена: $10000",
               "Позволяет следить за снами персонажей в гиперсне",
             ]}
-            image="//"
+            image="/gear/neuro.png"
           />
         }
         right={
@@ -1257,7 +1261,7 @@ export const Equipment = () => {
               "Цена: $50000",
               "Сканирует одну область за раунд",
             ]}
-            image="//"
+            image="/gear/pup.png"
           />
         }
         right={
@@ -1282,7 +1286,7 @@ export const Equipment = () => {
         left={
           <CardRightImage
             stats={["Вес: 1", "Цена: $150", "+1 к проверкам тяжелой техники"]}
-            image="//"
+            image="/gear/jack.png"
           />
         }
         right={
@@ -1303,7 +1307,7 @@ export const Equipment = () => {
         left={
           <CardRightImage
             stats={["Вес: 1/2", "$250", "+1 к проверкам информатики"]}
-            image="//"
+            image="/gear/electronics.png"
           />
         }
         right={
@@ -1318,7 +1322,7 @@ export const Equipment = () => {
         left={
           <CardRightImage
             stats={["Вес: 1/4", "Цена: $50", "+2 к проверкам медпомощи"]}
-            image="//"
+            image="/gear/medkit.png"
           />
         }
         right={
@@ -1345,7 +1349,7 @@ export const Equipment = () => {
               "Цена: $25-200",
               "+1 к проверкам медпомощи, когда пытаешься спасти кого-нибудь (в том числе себя) от смерти",
             ]}
-            image="//"
+            image="/gear/surgical.png"
           />
         }
         right={
@@ -1368,7 +1372,7 @@ export const Equipment = () => {
         left={
           <CardRightImage
             stats={["Вес: 0", "Цена: $2", "+1 к уровню стресса"]}
-            image="//"
+            image="/gear/neversleep.png"
           />
         }
         right={
@@ -1394,7 +1398,7 @@ export const Equipment = () => {
               "Цена: $5",
               "Устраняет эффекты жажды после гиперсна",
             ]}
-            image="//"
+            image="/gear/hydr8tion.png"
           />
         }
         right={
@@ -1413,7 +1417,7 @@ export const Equipment = () => {
         left={
           <CardRightImage
             stats={["Вес: 0", "Цена: $20", "Снижает уровень стресса до нуля"]}
-            image="//"
+            image="/gear/naproleve.png"
           />
         }
         right={
