@@ -1,7 +1,7 @@
 .sheet {
-  width: 210mm;
-  height: 297mm;
-  min-height: 297mm;
+  width: var(--page-width);
+  height: var(--page-height);
+  min-height: var(--page-height);
   padding: 7mm;
   margin: 10mm auto;
   background: white;
@@ -14,12 +14,16 @@
   margin: 0;
 }
 
+@page landscape {
+  size: a4 landscape;
+}
+
 @media print {
   html,
   body {
     margin: 0;
-    width: 210mm;
-    height: 297mm;
+    width: var(--page-width);
+    height: var(--page-height);
   }
 
   .sheet {
@@ -37,5 +41,6 @@
 
 .grid {
   display: grid;
-  width: max-content;
+  width: 100%;
+  height: 100%;
 }
