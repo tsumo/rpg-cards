@@ -3,7 +3,7 @@ import useMeasure from "react-use-measure";
 import { Text } from "./Text";
 import s from "./Card.module.css";
 
-const long = 860;
+const long = 870;
 const short = 550;
 const longInCm = `${long / 100}cm`;
 const shortInCm = `${short / 100}cm`;

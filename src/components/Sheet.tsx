@@ -1,5 +1,4 @@
 import { ReactNode, useMemo } from "react";
-import clsx from "clsx";
 import s from "./Sheet.module.css";
 
 export type SheetProps = {
@@ -14,7 +13,7 @@ export const Sheet = ({ itemsInRow, children }: SheetProps) => {
   );
 
   return (
-    <section className={clsx("sheet", s.sheet)}>
+    <section className={s.sheet}>
       <div className={s.grid} style={{ gridTemplateColumns }}>
         {children}
       </div>
