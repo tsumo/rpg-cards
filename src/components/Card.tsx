@@ -3,16 +3,16 @@ import useMeasure from "react-use-measure";
 import { Text } from "./Text";
 import s from "./Card.module.css";
 
-const width = 860;
-const height = 550;
-const widthInCm = `${width / 100}cm`;
-const heightInCm = `${height / 100}cm`;
+const long = 860;
+const short = 550;
+const longInCm = `${long / 100}cm`;
+const shortInCm = `${short / 100}cm`;
 
 const edgeOffset = 40;
 const cornerOffset = 30;
 const headingHeight = 50;
 
-const createPath = (headingWidth: number) => {
+const createPath = (width: number, height: number, headingWidth: number) => {
   const points: { x: number; y: number }[] = [];
 
   // heading start
@@ -53,21 +53,41 @@ const outlineThickness = 4;
 export type CardProps = {
   heading: string;
   headingSize?: string;
+  vertical?: boolean;
   children?: ReactNode;
 };
 
 export const Card = ({
   heading,
   headingSize = "3.1mm",
+  vertical,
   children,
 }: CardProps) => {
   const id = useId();
 
   const [ref, bounds] = useMeasure();
 
+  const { width, height, widthInCm, heightInCm } = useMemo(() => {
+    if (vertical) {
+      return {
+        width: short,
+        height: long,
+        widthInCm: shortInCm,
+        heightInCm: longInCm,
+      };
+    }
+    return {
+      width: long,
+      height: short,
+      widthInCm: longInCm,
+      heightInCm: shortInCm,
+    };
+  }, [vertical]);
+
   const path = useMemo(
-    () => createPath(bounds.width * window.devicePixelRatio * 1.32),
-    [bounds.width]
+    () =>
+      createPath(width, height, bounds.width * window.devicePixelRatio * 1.32),
+    [width, height, bounds.width]
   );
 
   return (
