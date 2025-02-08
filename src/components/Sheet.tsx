@@ -13,7 +13,7 @@ const short = "210mm";
 
 export const Sheet = ({ itemsInRow, landscape, children }: SheetProps) => {
   const gridTemplateColumns = useMemo(
-    () => new Array(itemsInRow).fill("auto").join(" "),
+    () => `repeat(${itemsInRow}, auto)`,
     [itemsInRow]
   );
 
