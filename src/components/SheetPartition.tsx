@@ -7,15 +7,15 @@ type SheetPartitionProps = SheetProps & {
 };
 
 export const SheetPartition = ({
-  itemsInRow,
   partitionBy,
   children,
+  ...props
 }: SheetPartitionProps) => {
   const partitioned = partition(Children.toArray(children), partitionBy);
 
   return partitioned.map((c, i) => {
     return (
-      <Sheet key={i} itemsInRow={itemsInRow}>
+      <Sheet key={i} {...props}>
         {c}
       </Sheet>
     );

@@ -3,7 +3,6 @@ import clsx from "clsx";
 import s from "./Sheet.module.css";
 
 export type SheetProps = {
-  itemsInRow: number;
   landscape?: boolean;
   children?: ReactNode;
 };
@@ -11,12 +10,7 @@ export type SheetProps = {
 const long = "297mm";
 const short = "210mm";
 
-export const Sheet = ({ itemsInRow, landscape, children }: SheetProps) => {
-  const gridTemplateColumns = useMemo(
-    () => `repeat(${itemsInRow}, auto)`,
-    [itemsInRow]
-  );
-
+export const Sheet = ({ landscape, children }: SheetProps) => {
   const [width, height] = useMemo(
     () => (landscape ? [long, short] : [short, long]),
     [landscape]
@@ -33,7 +27,12 @@ export const Sheet = ({ itemsInRow, landscape, children }: SheetProps) => {
         } as CSSProperties
       }
     >
-      <div className={s.grid} style={{ gridTemplateColumns }}>
+      <div
+        className={s.grid}
+        style={{
+          flexDirection: landscape ? "column" : "row",
+        }}
+      >
         {children}
       </div>
     </section>
