@@ -6,7 +6,7 @@ import { CardTextBlock } from "./CardTextBlock";
 
 type CardAgendaProps = {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   children?: ReactNode;
 };
 
@@ -21,7 +21,7 @@ export const CardAgenda = ({ title, subtitle, children }: CardAgendaProps) => {
           <Text size="4mm" className={s.title}>
             {title}
           </Text>
-          <Text size="3mm">{subtitle}</Text>
+          {subtitle && <Text size="3mm">{subtitle}</Text>}
         </div>
       }
       right={
