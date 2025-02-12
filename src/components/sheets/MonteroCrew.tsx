@@ -86,7 +86,7 @@ export const MonteroCrew = () => {
       />
 
       <CardPair
-        heading="Кейла Рай, РАБОТЯГА"
+        heading="Кейла Рай РАБОТЯГА"
         left={
           <CardRightImage
             stats={[
