@@ -6,7 +6,7 @@ import { Text } from "../Text";
 
 export const CronusCrew = () => {
   return (
-    <SheetPartition partitionBy={5}>
+    <SheetPartition title="Экипаж Cronus" partitionBy={5}>
       <CardPair
         heading="Альберт Джонс ОФИЦЕР"
         left={

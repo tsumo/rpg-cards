@@ -1,8 +1,10 @@
 import { CSSProperties, ReactNode, useMemo } from "react";
 import clsx from "clsx";
+import { Text } from "./Text";
 import s from "./Sheet.module.css";
 
 export type SheetProps = {
+  title?: string;
   landscape?: boolean;
   children?: ReactNode;
 };
@@ -10,7 +12,7 @@ export type SheetProps = {
 const long = "297mm";
 const short = "210mm";
 
-export const Sheet = ({ landscape, children }: SheetProps) => {
+export const Sheet = ({ title, landscape, children }: SheetProps) => {
   const [width, height] = useMemo(
     () => (landscape ? [long, short] : [short, long]),
     [landscape]
@@ -27,6 +29,7 @@ export const Sheet = ({ landscape, children }: SheetProps) => {
         } as CSSProperties
       }
     >
+      {title && <Text className={s.title}>{title}</Text>}
       <div
         className={s.grid}
         style={{

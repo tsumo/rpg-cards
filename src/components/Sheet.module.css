@@ -2,11 +2,12 @@
   width: var(--page-width);
   height: var(--page-height);
   min-height: var(--page-height);
-  padding: 7mm;
+  padding: 10mm;
   margin: 10mm auto;
   background: white;
   box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
+  position: relative;
 }
 
 @page {
@@ -37,6 +38,14 @@
     break-inside: avoid;
     break-after: always;
   }
+}
+
+.title {
+  font-size: 2.5mm;
+  position: absolute;
+  top: 5mm;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .grid {

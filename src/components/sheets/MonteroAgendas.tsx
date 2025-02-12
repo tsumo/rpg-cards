@@ -3,7 +3,11 @@ import { SheetPartition } from "../SheetPartition";
 
 export const MonteroAgendas = () => {
   return (
-    <SheetPartition landscape partitionBy={5}>
+    <SheetPartition
+      title="Личные цели, экипаж Montero"
+      landscape
+      partitionBy={5}
+    >
       <CardAgenda title="Ванесса Миллер КОМАНДИР" subtitle="АКТ 1">
         Следуй протоколу, выполни работу и получи оплату. Не рискуй лишний раз.
         Если повезет, следующий заказ будет выгоднее.

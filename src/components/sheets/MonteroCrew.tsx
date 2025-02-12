@@ -6,7 +6,7 @@ import { Text } from "../Text";
 
 export const MonteroCrew = () => {
   return (
-    <SheetPartition partitionBy={5}>
+    <SheetPartition title="Экипаж Montero" partitionBy={5}>
       <CardPair
         heading="Ванесса Миллер КОМАНДИР"
         left={

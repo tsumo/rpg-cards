@@ -7,6 +7,7 @@ type SheetPartitionProps = SheetProps & {
 };
 
 export const SheetPartition = ({
+  title,
   partitionBy,
   children,
   ...props
@@ -15,7 +16,11 @@ export const SheetPartition = ({
 
   return partitioned.map((c, i) => {
     return (
-      <Sheet key={i} {...props}>
+      <Sheet
+        key={i}
+        title={title && `${title} ${i + 1}/${partitioned.length}`}
+        {...props}
+      >
         {c}
       </Sheet>
     );
