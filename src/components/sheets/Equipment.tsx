@@ -1,6 +1,6 @@
 import { CardPair } from "../CardPair";
 import { CardRightImage } from "../CardRightImage";
-import { CardTopImage } from "../CardTopImage";
+import { CardBottomImage } from "../CardBottomImage";
 import { CardTextBlock } from "../CardTextBlock";
 import { SheetPartition } from "../SheetPartition";
 import { Text } from "../Text";
@@ -129,7 +129,7 @@ export const Equipment = () => {
       <CardPair
         heading="Имп. винтовка «Армат» M41A"
         left={
-          <CardTopImage
+          <CardBottomImage
             statsLeft={[
               "Качество: +1",
               "Урон: 2",
@@ -162,7 +162,7 @@ export const Equipment = () => {
       <CardPair
         heading="Импульсный автомат АК-4047"
         left={
-          <CardTopImage
+          <CardBottomImage
             statsLeft={[
               "Качество: –",
               "Урон: 2",
@@ -189,7 +189,7 @@ export const Equipment = () => {
       <CardPair
         heading="Снайперская винтовка M42A"
         left={
-          <CardTopImage
+          <CardBottomImage
             statsLeft={[
               "Качество: +2",
               "Урон: 2",
@@ -217,7 +217,7 @@ export const Equipment = () => {
         heading="Помп. ружье «Армат» мод. 37A2"
         headingSize="2.9mm"
         left={
-          <CardTopImage
+          <CardBottomImage
             statsLeft={[
               "Качество: +2",
               "Урон: 3",
@@ -245,7 +245,7 @@ export const Equipment = () => {
         heading="Плазм. имп. винт. «Армат» XM99A"
         headingSize="2.9mm"
         left={
-          <CardTopImage
+          <CardBottomImage
             statsLeft={[
               "Качество: –",
               "Урон: 4",
@@ -281,7 +281,7 @@ export const Equipment = () => {
         heading="Гарп. ружье «СпейсСаб» ASSO-400"
         headingSize="2.9mm"
         left={
-          <CardTopImage
+          <CardBottomImage
             statsLeft={[
               "Качество: —",
               "Урон: 1",
@@ -315,7 +315,7 @@ export const Equipment = () => {
       <CardPair
         heading="Гранатомет «Армат» U1"
         left={
-          <CardTopImage
+          <CardBottomImage
             statsLeft={[
               "Качество: +1",
               "Урон: взрыв 9",
@@ -351,7 +351,7 @@ export const Equipment = () => {
         heading="Тяж. имп. винт. «Армат» M41AE2"
         headingSize="2.9mm"
         left={
-          <CardTopImage
+          <CardBottomImage
             statsLeft={[
               "Качество: +1",
               "Урон: 3",
@@ -381,7 +381,7 @@ export const Equipment = () => {
       <CardPair
         heading="Смарт-пулемет M56A2"
         left={
-          <CardTopImage
+          <CardBottomImage
             statsLeft={[
               "Качество: +3",
               "Урон: 3",
@@ -417,7 +417,7 @@ export const Equipment = () => {
       <CardPair
         heading="Огнемет M420"
         left={
-          <CardTopImage
+          <CardBottomImage
             statsLeft={[
               "Качество: —",
               "Урон: 2",
@@ -612,7 +612,7 @@ export const Equipment = () => {
       <CardPair
         heading="Электрошоковая дубинка"
         left={
-          <CardTopImage
+          <CardBottomImage
             statsLeft={[
               "Качество: +1",
               "Урон: 1",

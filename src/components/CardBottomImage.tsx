@@ -1,17 +1,17 @@
-import s from "./CardTopImage.module.css";
+import s from "./CardBottomImage.module.css";
 import { StatLine } from "./StatLine";
 import { Image, ImageProps } from "./Image";
 
-type CardTopImageProps = {
+type CardBottomImageProps = {
   statsLeft: string[];
   statsRight: string[];
 } & ImageProps;
 
-export const CardTopImage = ({
+export const CardBottomImage = ({
   statsLeft,
   statsRight,
   ...imageProps
-}: CardTopImageProps) => {
+}: CardBottomImageProps) => {
   return (
     <div className={s.block}>
       <div className={s.stats}>
