@@ -1,16 +1,16 @@
 import s from "./CardTopImage.module.css";
 import { StatLine } from "./StatLine";
+import { Image, ImageProps } from "./Image";
 
 type CardTopImageProps = {
   statsLeft: string[];
   statsRight: string[];
-  image: string;
-};
+} & ImageProps;
 
 export const CardTopImage = ({
   statsLeft,
   statsRight,
-  image,
+  ...imageProps
 }: CardTopImageProps) => {
   return (
     <div className={s.block}>
@@ -26,7 +26,7 @@ export const CardTopImage = ({
           ))}
         </div>
       </div>
-      <div className={s.image} style={{ backgroundImage: `url("${image}")` }} />
+      <Image {...imageProps} />
     </div>
   );
 };

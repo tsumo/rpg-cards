@@ -7,11 +7,3 @@
   align-items: center;
   justify-content: center;
 }
-
-.image {
-  width: 100%;
-}
-
-.flip {
-  transform: scaleX(-1);
-}

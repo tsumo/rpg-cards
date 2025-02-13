@@ -1,0 +1,10 @@
+.image {
+  height: inherit;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.flip {
+  transform: scaleX(-1);
+}
