@@ -4,6 +4,12 @@ import { MonteroAgendas } from "./components/sheets/MonteroAgendas";
 import { MonteroCrew } from "./components/sheets/MonteroCrew";
 import { SotilloCrew } from "./components/sheets/SotilloCrew";
 
+/*
+TODO
+- general abilities tables
+- card box generator
+*/
+
 export const App = () => {
   return (
     <>
