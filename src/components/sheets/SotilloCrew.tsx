@@ -1,3 +1,4 @@
+import { image } from "../../utils";
 import { CardPair } from "../CardPair";
 import { CardRightImage } from "../CardRightImage";
 import { CardTextBlock } from "../CardTextBlock";
@@ -21,7 +22,7 @@ export const SotilloCrew = () => {
               "Приятель: Пин",
               "Соперник: –",
             ]}
-            image="/sotillo/bolaji.png"
+            image={image("sotillo", "bolaji")}
             flipImage
             brightness={1.8}
             contrast={1.4}
@@ -63,7 +64,7 @@ export const SotilloCrew = () => {
               "Приятель: Боладжи",
               "Соперник: Бейн",
             ]}
-            image="/sotillo/pin.png"
+            image={image("sotillo", "pin")}
             brightness={1.8}
             contrast={1.4}
           />
@@ -104,7 +105,7 @@ export const SotilloCrew = () => {
               "Приятель: Хортон",
               "Соперник: Пин",
             ]}
-            image="/sotillo/bein.png"
+            image={image("sotillo", "bein")}
             brightness={1.8}
             contrast={1.4}
           />
@@ -143,7 +144,7 @@ export const SotilloCrew = () => {
               "Приятель: Бейн",
               "Соперник: –",
             ]}
-            image="/sotillo/horton.png"
+            image={image("sotillo", "horton")}
             flipImage
             brightness={1.8}
             contrast={1.4}

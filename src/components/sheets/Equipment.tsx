@@ -1,3 +1,4 @@
+import { image } from "../../utils";
 import { CardPair } from "../CardPair";
 import { CardRightImage } from "../CardRightImage";
 import { CardBottomImage } from "../CardBottomImage";
@@ -19,7 +20,7 @@ export const Equipment = () => {
               "Вес: 1/2",
               "Цена: $200",
             ]}
-            image="/weapons/pistol.png"
+            image={image("weapons", "pistol")}
             columns="1fr 2fr"
           />
         }
@@ -45,7 +46,7 @@ export const Equipment = () => {
               "Вес: 1",
               "Цена: $300",
             ]}
-            image="/weapons/magnum.png"
+            image={image("weapons", "magnum")}
             columns="1fr 2fr"
           />
         }
@@ -73,7 +74,7 @@ export const Equipment = () => {
               "Цена: $400",
               "Свойства: бронебойное",
             ]}
-            image="/weapons/rexim.png"
+            image={image("weapons", "rexim")}
             columns="1fr 1.5fr"
           />
         }
@@ -107,7 +108,7 @@ export const Equipment = () => {
               "Свойства: бронебойное, однозарядное",
               "+2 к проверкам тяжелой техники",
             ]}
-            image="/weapons/watatsumi.png"
+            image={image("weapons", "watatsumi")}
             columns="1fr 1.5fr"
           />
         }
@@ -140,7 +141,7 @@ export const Equipment = () => {
               "Цена: $1200",
               "Свойства: автоматическое, бронебойное, подствольный гранатомет",
             ]}
-            image="/weapons/m4a1.png"
+            image={image("weapons", "m4a1")}
           />
         }
         right={
@@ -170,7 +171,7 @@ export const Equipment = () => {
               "Вес: 1",
             ]}
             statsRight={["Цена: $500", "Свойства: автоматическое"]}
-            image="/weapons/ak4047.png"
+            image={image("weapons", "ak4047")}
           />
         }
         right={
@@ -197,7 +198,7 @@ export const Equipment = () => {
               "Вес: 1",
             ]}
             statsRight={["Цена: $1000", "Свойства: бронебойное"]}
-            image="/weapons/m4a2.png"
+            image={image("weapons", "m4a2")}
           />
         }
         right={
@@ -228,7 +229,7 @@ export const Equipment = () => {
               "Цена: $500",
               "Свойства: низкая пробивная способность",
             ]}
-            image="/weapons/37a2.png"
+            image={image("weapons", "37a2")}
           />
         }
         right={
@@ -256,7 +257,7 @@ export const Equipment = () => {
               "Цена: $20000",
               "Свойства: бронебойное, запас электроэнергии 5",
             ]}
-            image="/weapons/xm99a.png"
+            image={image("weapons", "xm99a")}
           />
         }
         right={
@@ -292,7 +293,7 @@ export const Equipment = () => {
               "Цена: $300",
               "Свойства: низкая пробивная способность, однозарядное",
             ]}
-            image="/weapons/spacesub.png"
+            image={image("weapons", "spacesub")}
           />
         }
         right={
@@ -326,7 +327,7 @@ export const Equipment = () => {
               "Цена: $600",
               "Свойства: можно использовать разные виды гранат",
             ]}
-            image="/weapons/u1.png"
+            image={image("weapons", "u1")}
           />
         }
         right={
@@ -362,7 +363,7 @@ export const Equipment = () => {
               "Цена: $1500",
               "Свойства: автоматическое, бронебойное",
             ]}
-            image="/weapons/m41ae2.png"
+            image={image("weapons", "m41ae2")}
           />
         }
         right={
@@ -392,7 +393,7 @@ export const Equipment = () => {
               "Цена: $6000",
               "Свойства: автоматическое, бронебойное",
             ]}
-            image="/weapons/m56a2.png"
+            image={image("weapons", "m56a2")}
           />
         }
         right={
@@ -428,7 +429,7 @@ export const Equipment = () => {
               "Цена: $500",
               "Свойства: источник огня с интенсивностью 9",
             ]}
-            image="/weapons/incinerator.png"
+            image={image("weapons", "incinerator")}
           />
         }
         right={
@@ -461,7 +462,7 @@ export const Equipment = () => {
               "Цена: $12000",
               "Свойства: автоматическое, бронебойное, дистанционный бой 8",
             ]}
-            image="/weapons/ua571c.png"
+            image={image("weapons", "ua571c")}
           />
         }
         right={
@@ -494,7 +495,7 @@ export const Equipment = () => {
               "Цена: $400",
               "Свойства: оглушающее, при встречной проверке действует модификатор -2",
             ]}
-            image="/weapons/g2.png"
+            image={image("weapons", "g2")}
           />
         }
         right={
@@ -526,7 +527,7 @@ export const Equipment = () => {
               "Дистанция: нулевая",
               "Свойства: низкая пробивная способность",
             ]}
-            image="/weapons/fist.png"
+            image={image("weapons", "fist")}
           />
         }
         right={
@@ -556,7 +557,7 @@ export const Equipment = () => {
         left={
           <CardRightImage
             stats={["Качество: +1", "Урон: 1", "Дистанция: нулевая", "Вес: 1"]}
-            image="/weapons/blunt.png"
+            image={image("weapons", "blunt")}
           />
         }
         right={
@@ -588,7 +589,7 @@ export const Equipment = () => {
               "Вес: 1/2",
               "Цена: $50",
             ]}
-            image="/weapons/knife.png"
+            image={image("weapons", "knife")}
           />
         }
         right={
@@ -623,7 +624,7 @@ export const Equipment = () => {
               "Цена: $80",
               "Свойства: запас электроэнергии 5, оглушающее",
             ]}
-            image="/weapons/prod.png"
+            image={image("weapons", "prod")}
           />
         }
         right={
@@ -657,7 +658,7 @@ export const Equipment = () => {
               "Свойства: бронебойное, запас электроэнергии 5",
               "+2 к проверкам тяжелой техники",
             ]}
-            image="/weapons/torch.png"
+            image={image("weapons", "torch")}
             brightness={2.5}
             contrast={1.8}
           />
@@ -688,7 +689,7 @@ export const Equipment = () => {
               "Цена: $1200",
               "Встроенный коммуникатор",
             ]}
-            image="/protection/m3.png"
+            image={image("protection", "m3")}
             brightness={1.5}
             contrast={2.1}
           />
@@ -719,7 +720,7 @@ export const Equipment = () => {
               "Вес: 1",
               "Цена: $15000",
             ]}
-            image="/protection/mk50.png"
+            image={image("protection", "mk50")}
             brightness={1.7}
             contrast={1.3}
           />
@@ -751,7 +752,7 @@ export const Equipment = () => {
               "Цена: $2000",
               "-1 при проверках проворства",
             ]}
-            image="/protection/mk35.png"
+            image={image("protection", "mk35")}
           />
         }
         right={
@@ -781,7 +782,7 @@ export const Equipment = () => {
               "Вес: 2",
               "Цена: $30000",
             ]}
-            image="/protection/eco.png"
+            image={image("protection", "eco")}
             brightness={0.8}
             contrast={1.8}
           />
@@ -812,7 +813,7 @@ export const Equipment = () => {
               "Цена: $5000",
               "+3 при проверках выживания",
             ]}
-            image="/protection/ape.png"
+            image={image("protection", "ape")}
             flipImage
           />
         }
@@ -844,7 +845,7 @@ export const Equipment = () => {
               "Цена: $50000",
               "+3 при проверках тяжелой техники и ближнего боя",
             ]}
-            image="/protection/p5000.png"
+            image={image("protection", "p5000")}
             brightness={1.2}
             contrast={1}
           />
@@ -875,7 +876,7 @@ export const Equipment = () => {
               "Цена: $9000",
               "Позволяет управлять кораблем удаленно (проверка информатики)",
             ]}
-            image="/gear/prput.png"
+            image={image("gear", "prput")}
           />
         }
         right={
@@ -900,7 +901,7 @@ export const Equipment = () => {
               "Цена: $50-100",
               "Позволяет записывать и воспроизводить музыку (+1 к проверкам влияния)",
             ]}
-            image="/gear/recorder.png"
+            image={image("gear", "recorder")}
             brightness={1.8}
             contrast={1.5}
           />
@@ -929,7 +930,7 @@ export const Equipment = () => {
               "Цена: $50",
               "Показывают время, уровень кислорода и внешнего давления (+1 к проверкам выживания)",
             ]}
-            image="/gear/watch.png"
+            image={image("gear", "watch")}
             flipImage
           />
         }
@@ -956,7 +957,7 @@ export const Equipment = () => {
               "Цена: $100",
               "Отслеживает местоположение и жизненные показатели владельца",
             ]}
-            image="/gear/pdt.png"
+            image={image("gear", "pdt")}
           />
         }
         right={
@@ -982,7 +983,7 @@ export const Equipment = () => {
               "Цена: $250",
               "Защищает от огня дружественных турелей",
             ]}
-            image="/gear/iff.png"
+            image={image("gear", "iff")}
           />
         }
         right={
@@ -1005,7 +1006,7 @@ export const Equipment = () => {
         left={
           <CardRightImage
             stats={["Вес: 0", "Цена: $50", "Пересылает аудиовизуальные данные"]}
-            image="/gear/dtc.png"
+            image={image("gear", "dtc")}
           />
         }
         right={
@@ -1031,7 +1032,7 @@ export const Equipment = () => {
               "Цена: $500",
               "Помогает команде координировать свои действия",
             ]}
-            image="/gear/pdat.png"
+            image={image("gear", "pdat")}
             flipImage
           />
         }
@@ -1056,7 +1057,7 @@ export const Equipment = () => {
               "Цена: $300",
               "Выявляет неполадки в компьютерных системах (+2 к проверкам информатики)",
             ]}
-            image="/gear/ssdd.png"
+            image={image("gear", "ssdd")}
             brightness={2.9}
             contrast={1.5}
           />
@@ -1083,7 +1084,7 @@ export const Equipment = () => {
               "Цена: $60",
               "Увеличивает дистанцию стрельбы на 1 ступень",
             ]}
-            image="/gear/sights.png"
+            image={image("gear", "sights")}
           />
         }
         right={
@@ -1105,7 +1106,7 @@ export const Equipment = () => {
         left={
           <CardRightImage
             stats={["Вес: 1/2", "Цена: $45", "Освещает тёмную область"]}
-            image="/gear/flashlight.png"
+            image={image("gear", "flashlight")}
           />
         }
         right={
@@ -1127,7 +1128,7 @@ export const Equipment = () => {
               "Цена: $100",
               "+2 к проверкам наблюдательности",
             ]}
-            image="/gear/binoculars.png"
+            image={image("gear", "binoculars")}
           />
         }
         right={
@@ -1150,7 +1151,7 @@ export const Equipment = () => {
               "В помещениях засекает движение в рамках дальней дистанции. См. стр. 86.",
               "Запах электроэнергии 5",
             ]}
-            image="/gear/m314.png"
+            image={image("gear", "m314")}
           />
         }
         right={
@@ -1180,7 +1181,7 @@ export const Equipment = () => {
               "В помещениях засекает движение в рамках средней дистанции. См. стр. 86.",
               "Запах электроэнергии 3",
             ]}
-            image="/gear/m316.png"
+            image={image("gear", "m316")}
             flipImage
           />
         }
@@ -1209,7 +1210,7 @@ export const Equipment = () => {
               "Цена: $200",
               "Позволяет удалённо управлять стационарным пулемётом",
             ]}
-            image="/gear/headsight.png"
+            image={image("gear", "headsight")}
           />
         }
         right={
@@ -1232,7 +1233,7 @@ export const Equipment = () => {
               "Цена: $10000",
               "Позволяет следить за снами персонажей в гиперсне",
             ]}
-            image="/gear/neuro.png"
+            image={image("gear", "neuro")}
           />
         }
         right={
@@ -1261,7 +1262,7 @@ export const Equipment = () => {
               "Цена: $50000",
               "Сканирует одну область за раунд",
             ]}
-            image="/gear/pup.png"
+            image={image("gear", "pup")}
           />
         }
         right={
@@ -1286,7 +1287,7 @@ export const Equipment = () => {
         left={
           <CardRightImage
             stats={["Вес: 1", "Цена: $150", "+1 к проверкам тяжелой техники"]}
-            image="/gear/jack.png"
+            image={image("gear", "jack")}
           />
         }
         right={
@@ -1307,7 +1308,7 @@ export const Equipment = () => {
         left={
           <CardRightImage
             stats={["Вес: 1/2", "$250", "+1 к проверкам информатики"]}
-            image="/gear/electronics.png"
+            image={image("gear", "electronics")}
           />
         }
         right={
@@ -1322,7 +1323,7 @@ export const Equipment = () => {
         left={
           <CardRightImage
             stats={["Вес: 1/4", "Цена: $50", "+2 к проверкам медпомощи"]}
-            image="/gear/medkit.png"
+            image={image("gear", "medkit")}
           />
         }
         right={
@@ -1349,7 +1350,7 @@ export const Equipment = () => {
               "Цена: $25-200",
               "+1 к проверкам медпомощи, когда пытаешься спасти кого-нибудь (в том числе себя) от смерти",
             ]}
-            image="/gear/surgical.png"
+            image={image("gear", "surgical")}
           />
         }
         right={
@@ -1372,7 +1373,7 @@ export const Equipment = () => {
         left={
           <CardRightImage
             stats={["Вес: 0", "Цена: $2", "+1 к уровню стресса"]}
-            image="/gear/neversleep.png"
+            image={image("gear", "neversleep")}
           />
         }
         right={
@@ -1398,7 +1399,7 @@ export const Equipment = () => {
               "Цена: $5",
               "Устраняет эффекты жажды после гиперсна",
             ]}
-            image="/gear/hydr8tion.png"
+            image={image("gear", "hydr8tion")}
           />
         }
         right={
@@ -1417,7 +1418,7 @@ export const Equipment = () => {
         left={
           <CardRightImage
             stats={["Вес: 0", "Цена: $20", "Снижает уровень стресса до нуля"]}
-            image="/gear/naproleve.png"
+            image={image("gear", "naproleve")}
           />
         }
         right={

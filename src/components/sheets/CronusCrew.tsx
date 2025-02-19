@@ -1,3 +1,4 @@
+import { image } from "../../utils";
 import { CardPair } from "../CardPair";
 import { CardRightImage } from "../CardRightImage";
 import { CardTextBlock } from "../CardTextBlock";
@@ -21,7 +22,7 @@ export const CronusCrew = () => {
               "Приятель: –",
               "Соперник: Клейтон",
             ]}
-            image="/cronus/johns.png"
+            image={image("cronus", "johns")}
             brightness={1.8}
             contrast={1.4}
           />
@@ -59,7 +60,7 @@ export const CronusCrew = () => {
               "Приятель: Джонс",
               "Соперник: Флинн",
             ]}
-            image="/cronus/reid.png"
+            image={image("cronus", "reid")}
             brightness={1.8}
             contrast={1.4}
           />
@@ -100,7 +101,7 @@ export const CronusCrew = () => {
               "Приятель: Купер",
               "Соперник: Рид",
             ]}
-            image="/cronus/flynn.png"
+            image={image("cronus", "flynn")}
             brightness={1.2}
             contrast={1.4}
           />
@@ -141,7 +142,7 @@ export const CronusCrew = () => {
               "Приятель: Флинн",
               "Соперник: Клейтон",
             ]}
-            image="/cronus/cooper.png"
+            image={image("cronus", "cooper")}
             flipImage
             brightness={1.4}
             contrast={1.4}
@@ -185,7 +186,7 @@ export const CronusCrew = () => {
               "Приятель: –",
               "Соперник: Купер",
             ]}
-            image="/cronus/clayton.png"
+            image={image("cronus", "clayton")}
             brightness={1.2}
             contrast={1.4}
           />
@@ -226,7 +227,7 @@ export const CronusCrew = () => {
               "Приятель: –",
               "Соперник: –",
             ]}
-            image="/cronus/ava.png"
+            image={image("cronus", "ava")}
             brightness={1.4}
             contrast={1.4}
           />

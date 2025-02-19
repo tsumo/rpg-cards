@@ -1,3 +1,4 @@
+import { image } from "../../utils";
 import { CardPair } from "../CardPair";
 import { CardRightImage } from "../CardRightImage";
 import { CardTextBlock } from "../CardTextBlock";
@@ -21,7 +22,7 @@ export const MonteroCrew = () => {
               "Приятель: Дэвис",
               "Соперник: Уилсон",
             ]}
-            image="/montero/miller.png"
+            image={image("montero", "miller")}
             flipImage
             brightness={1.75}
             contrast={2.75}
@@ -60,7 +61,7 @@ export const MonteroCrew = () => {
               "Приятель: Миллер",
               "Соперник: —",
             ]}
-            image="/montero/davis.png"
+            image={image("montero", "davis")}
             brightness={1.95}
             contrast={2.75}
           />
@@ -99,7 +100,7 @@ export const MonteroCrew = () => {
               "Приятель: Чам",
               "Соперник: Миллер",
             ]}
-            image="/montero/rye.png"
+            image={image("montero", "rye")}
             brightness={1.7}
             contrast={3.2}
           />
@@ -135,7 +136,7 @@ export const MonteroCrew = () => {
               "Приятель: Рай",
               "Соперник: —",
             ]}
-            image="/montero/cham.png"
+            image={image("montero", "cham")}
             brightness={2}
             contrast={1.7}
             flipImage
@@ -170,7 +171,7 @@ export const MonteroCrew = () => {
               "Приятель: —",
               "Соперник: Миллер",
             ]}
-            image="/montero/wilson.png"
+            image={image("montero", "wilson")}
             brightness={2.3}
             contrast={2.7}
           />

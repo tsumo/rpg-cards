@@ -3,6 +3,7 @@ import { Text } from "./Text";
 import s from "./CardAgenda.module.css";
 import { CardPair } from "./CardPair";
 import { CardTextBlock } from "./CardTextBlock";
+import facehuggerLogo from "../assets/facehugger_logo.png";
 
 type CardAgendaProps = {
   title: string;
@@ -17,7 +18,7 @@ export const CardAgenda = ({ title, subtitle, children }: CardAgendaProps) => {
       vertical
       left={
         <div className={s.block}>
-          <img src="/facehugger_logo.png" className={s.logo} />
+          <img src={facehuggerLogo} className={s.logo} />
           <Text size="4mm" className={s.title}>
             {title}
           </Text>
