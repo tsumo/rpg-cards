@@ -1,3 +1,5 @@
+import { CardBox } from "./components/CardBox";
+import { Sheet } from "./components/Sheet";
 import { CronusCrew } from "./components/sheets/CronusCrew";
 import { Equipment } from "./components/sheets/Equipment";
 import { MonteroAgendas } from "./components/sheets/MonteroAgendas";
@@ -7,7 +9,6 @@ import { SotilloCrew } from "./components/sheets/SotilloCrew";
 /*
 TODO
 - general abilities tables
-- card box generator
 */
 
 export const App = () => {
@@ -18,6 +19,9 @@ export const App = () => {
       <MonteroAgendas />
       <CronusCrew />
       <SotilloCrew />
+      <Sheet>
+        <CardBox thickness={200} />
+      </Sheet>
     </>
   );
 };
