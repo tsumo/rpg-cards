@@ -65,7 +65,8 @@ export const Card = ({
 }: CardProps) => {
   const id = useId();
 
-  const [ref, bounds] = useMeasure();
+  const [cardRef, cardBounds] = useMeasure();
+  const [headingRef, headingBounds] = useMeasure();
 
   const { width, height, widthInCm, heightInCm } = useMemo(() => {
     if (vertical) {
@@ -86,16 +87,21 @@ export const Card = ({
 
   const path = useMemo(
     () =>
-      createPath(width, height, bounds.width * window.devicePixelRatio * 1.32),
-    [width, height, bounds.width]
+      createPath(
+        width,
+        height,
+        (headingBounds.width / cardBounds.width) * width
+      ),
+    [width, height, headingBounds.width, cardBounds.width]
   );
 
   return (
     <div
+      ref={cardRef}
       className={s.card}
       style={{ "--width": widthInCm, "--height": heightInCm } as CSSProperties}
     >
-      <Text ocr size={headingSize} ref={ref} className={s.heading}>
+      <Text ocr size={headingSize} ref={headingRef} className={s.heading}>
         {heading}
       </Text>
 
