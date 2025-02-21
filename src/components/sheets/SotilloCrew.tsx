@@ -30,7 +30,7 @@ export const SotilloCrew = () => {
         }
         right={
           <CardTextBlock>
-            <Text>
+            <Text lineHeight={1.25}>
               <p>
                 Неуклюжий, высокий и худощавый, Боладжи — не типичный
                 преступник. По контракту с Seegson он получает деньги за то,
@@ -71,7 +71,7 @@ export const SotilloCrew = () => {
         }
         right={
           <CardTextBlock>
-            <Text>
+            <Text lineHeight={1.25}>
               <p>
                 Пинион выросла вместе с Боладжи на Соломоновых островах. В
                 подростковом возрасте они вместе угоняли лунные шаттлы. Будучи
@@ -152,7 +152,7 @@ export const SotilloCrew = () => {
         }
         right={
           <CardTextBlock>
-            <Text>
+            <Text lineHeight={1.25}>
               <p>
                 Двенадцатилетний сын мелкого чиновника Weyland-Yutani, который
                 обманул Боладжи в одной из сделок, Хортон был похищен капитаном
