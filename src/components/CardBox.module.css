@@ -1,0 +1,29 @@
+.box {
+  position: relative;
+}
+
+.content {
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1cm;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 80%;
+}
+
+.front {
+  left: calc(var(--thickness) + 0.05mm);
+  top: 0.15mm;
+}
+
+.back {
+  left: calc(var(--thickness) + 0.1mm);
+  top: calc(var(--height) + var(--thickness) + 0.15mm);
+  transform: rotateZ(180deg);
+}

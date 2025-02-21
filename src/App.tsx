@@ -1,5 +1,3 @@
-import { CardBox } from "./components/CardBox";
-import { Sheet } from "./components/Sheet";
 import { CronusCrew } from "./components/sheets/CronusCrew";
 import { Gear } from "./components/sheets/Gear";
 import { MonteroAgendas } from "./components/sheets/MonteroAgendas";
@@ -23,9 +21,6 @@ export const App = () => {
       <MonteroAgendas />
       <CronusCrew />
       <SotilloCrew />
-      <Sheet>
-        <CardBox thickness={200} />
-      </Sheet>
     </>
   );
 };

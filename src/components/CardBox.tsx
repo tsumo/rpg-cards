@@ -1,4 +1,11 @@
+import { CSSProperties } from "react";
+import clsx from "clsx";
+import { Text } from "./Text";
+import s from "./CardBox.module.css";
+import facehuggerLogo from "../assets/facehugger_logo.png";
+
 type CardBoxProps = {
+  title: string;
   thickness: number;
 };
 
@@ -23,21 +30,41 @@ type CardBoxProps = {
 */
 
 const long = 870 + 50;
+const longInCm = `${long / 100}cm`;
 const short = 550 + 50;
+const shortInCm = `${short / 100}cm`;
 
-export const CardBox = ({ thickness }: CardBoxProps) => {
-  const width = thickness + short + thickness;
-  const widthInCm = `${width / 100}cm`;
-  const height = long + thickness + long + thickness + thickness;
-  const heightInCm = `${height / 100}cm`;
+export const CardBox = ({ title, thickness }: CardBoxProps) => {
+  const thicknessInCm = `${thickness / 100}cm`;
+  const totalWidth = thickness + short + thickness;
+  const totalWidthInCmPlus = `${totalWidth / 100 + 0.04}cm`;
+  const totalHeight = long + thickness + long + thickness + thickness;
+  const totalHeightInCmPlus = `${totalHeight / 100 + 0.04}cm`;
   const sideFlapCoef = 0.3;
+  const flapThickness = thickness * 0.6;
+
+  const content = (
+    <>
+      <img src={facehuggerLogo} className={s.image} />
+      <Text size="0.5cm">{title}</Text>
+    </>
+  );
 
   return (
-    <div>
+    <div
+      style={
+        {
+          "--width": shortInCm,
+          "--height": longInCm,
+          "--thickness": thicknessInCm,
+        } as CSSProperties
+      }
+      className={s.box}
+    >
       <svg
-        width={widthInCm}
-        height={heightInCm}
-        viewBox={`-2 -2 ${width + 4} ${height + 4}`}
+        width={totalWidthInCmPlus}
+        height={totalHeightInCmPlus}
+        viewBox={`-2 -2 ${totalWidth + 4} ${totalHeight + 4}`}
         fillOpacity={0}
         stroke="black"
       >
@@ -97,12 +124,19 @@ export const CardBox = ({ thickness }: CardBoxProps) => {
         <path
           d={[
             `M ${thickness} ${long + thickness + long + thickness}`,
-            `a${thickness},${thickness} 0 0 0 ${thickness / 2},${thickness}`,
+            `a${thickness / 2},${flapThickness} 0 0 0 ${
+              thickness / 2
+            },${flapThickness}`,
             `l ${short - thickness} 0`,
-            `a${thickness},${thickness} 0 0 0 ${thickness / 2},${-thickness}`,
+            `a${thickness / 2},${flapThickness} 0 0 0 ${
+              thickness / 2
+            },${-flapThickness}`,
           ].join(" ")}
         />
       </svg>
+
+      <div className={clsx(s.content, s.front)}>{content}</div>
+      <div className={clsx(s.content, s.back)}>{content}</div>
     </div>
   );
 };
