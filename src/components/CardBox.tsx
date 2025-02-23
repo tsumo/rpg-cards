@@ -31,7 +31,7 @@ type CardBoxProps = {
 
 const long = 870 + 50;
 const longInCm = `${long / 100}cm`;
-const short = 550 + 50;
+const short = 550 + 60;
 const shortInCm = `${short / 100}cm`;
 
 export const CardBox = ({ title, thickness }: CardBoxProps) => {
