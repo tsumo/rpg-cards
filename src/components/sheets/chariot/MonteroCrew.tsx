@@ -1,9 +1,9 @@
-import { image } from "../../utils";
-import { CardPair } from "../CardPair";
-import { CardRightImage } from "../CardRightImage";
-import { CardTextBlock } from "../CardTextBlock";
-import { SheetPartition } from "../SheetPartition";
-import { Text } from "../Text";
+import { image } from "../../../utils";
+import { CardPair } from "../../CardPair";
+import { CardRightImage } from "../../CardRightImage";
+import { CardTextBlock } from "../../CardTextBlock";
+import { SheetPartition } from "../../SheetPartition";
+import { Text } from "../../Text";
 
 export const MonteroCrew = () => {
   return (

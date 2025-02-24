@@ -1,5 +1,5 @@
-import { CardAgenda } from "../CardAgenda";
-import { SheetPartition } from "../SheetPartition";
+import { CardAgenda } from "../../CardAgenda";
+import { SheetPartition } from "../../SheetPartition";
 
 export const MonteroAgendas = () => {
   return (
