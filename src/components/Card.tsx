@@ -1,5 +1,6 @@
 import { CSSProperties, ReactNode, useId, useMemo } from "react";
 import useMeasure from "react-use-measure";
+import clsx from "clsx";
 import { Text } from "./Text";
 import s from "./Card.module.css";
 
@@ -54,6 +55,7 @@ export type CardProps = {
   heading: string;
   headingSize?: string;
   vertical?: boolean;
+  printUpsideDown?: boolean;
   children?: ReactNode;
 };
 
@@ -61,6 +63,7 @@ export const Card = ({
   heading,
   headingSize = "3.1mm",
   vertical,
+  printUpsideDown,
   children,
 }: CardProps) => {
   const id = useId();
@@ -98,7 +101,7 @@ export const Card = ({
   return (
     <div
       ref={cardRef}
-      className={s.card}
+      className={clsx(s.card, printUpsideDown && s.rotated)}
       style={{ "--width": widthInCm, "--height": heightInCm } as CSSProperties}
     >
       <Text ocr size={headingSize} ref={headingRef} className={s.heading}>

@@ -10,7 +10,9 @@ export const CardPair = ({ left, right, ...props }: CardPairProps) => {
   return (
     <>
       <Card {...props}>{left}</Card>
-      <Card {...props}>{right}</Card>
+      <Card printUpsideDown={props.vertical} {...props}>
+        {right}
+      </Card>
     </>
   );
 };
