@@ -1,8 +1,9 @@
 import { CSSProperties } from "react";
 import clsx from "clsx";
 import { Text } from "./Text";
-import s from "./CardBox.module.css";
+import { SvgPath } from "../utils/svgPath";
 import facehuggerLogo from "../assets/facehugger_logo.png";
+import s from "./CardBox.module.css";
 
 type CardBoxProps = {
   title: string;
@@ -75,17 +76,17 @@ export const CardBox = ({ title, thickness }: CardBoxProps) => {
 
         {/* bottom */}
         <path
-          d={[
-            `M 0 ${long + thickness}`,
-            `l ${thickness * sideFlapCoef} ${-thickness}`,
-          ].join(" ")}
+          d={new SvgPath()
+            .M(0, long + thickness)
+            .l(thickness * sideFlapCoef, -thickness)
+            .finish()}
         />
         <rect x={thickness} y={long} width={short} height={thickness} />
         <path
-          d={[
-            `M ${thickness + short + thickness} ${long + thickness}`,
-            `l ${-thickness * sideFlapCoef} ${-thickness}`,
-          ].join(" ")}
+          d={new SvgPath()
+            .M(thickness + short + thickness, long + thickness)
+            .l(-thickness * sideFlapCoef, -thickness)
+            .finish()}
         />
 
         {/* front */}
@@ -100,11 +101,11 @@ export const CardBox = ({ title, thickness }: CardBoxProps) => {
 
         {/* top */}
         <path
-          d={[
-            `M 0 ${long + thickness + long}`,
-            `l ${thickness * sideFlapCoef} ${thickness}`,
-            `l ${thickness * (1 - sideFlapCoef)} 0`,
-          ].join(" ")}
+          d={new SvgPath()
+            .M(0, long + thickness + long)
+            .l(thickness * sideFlapCoef, thickness)
+            .l(thickness * (1 - sideFlapCoef), 0)
+            .finish()}
         />
         <rect
           x={thickness}
@@ -113,25 +114,37 @@ export const CardBox = ({ title, thickness }: CardBoxProps) => {
           height={thickness}
         />
         <path
-          d={[
-            `M ${thickness + short + thickness} ${long + thickness + long}`,
-            `l ${-thickness * sideFlapCoef} ${thickness}`,
-            `l ${-thickness * (1 - sideFlapCoef)} 0`,
-          ].join(" ")}
+          d={new SvgPath()
+            .M(thickness + short + thickness, long + thickness + long)
+            .l(-thickness * sideFlapCoef, thickness)
+            .l(-thickness * (1 - sideFlapCoef), 0)
+            .finish()}
         />
 
         {/* flap */}
         <path
-          d={[
-            `M ${thickness} ${long + thickness + long + thickness}`,
-            `a${thickness / 2},${flapThickness} 0 0 0 ${
-              thickness / 2
-            },${flapThickness}`,
-            `l ${short - thickness} 0`,
-            `a${thickness / 2},${flapThickness} 0 0 0 ${
-              thickness / 2
-            },${-flapThickness}`,
-          ].join(" ")}
+          d={new SvgPath()
+            .M(thickness, long + thickness + long + thickness)
+            .a(
+              thickness / 2,
+              flapThickness,
+              0,
+              0,
+              0,
+              thickness / 2,
+              flapThickness
+            )
+            .l(short - thickness, 0)
+            .a(
+              thickness / 2,
+              flapThickness,
+              0,
+              0,
+              0,
+              thickness / 2,
+              -flapThickness
+            )
+            .finish()}
         />
       </svg>
 

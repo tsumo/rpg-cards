@@ -15,42 +15,42 @@ export const constructFilter = (brightness?: number, contrast?: number) => {
 
 const imageFolders = {
   cronus: Object.values(
-    import.meta.glob("./assets/cronus/*.png", {
+    import.meta.glob("../assets/cronus/*.png", {
       eager: true,
       query: "?url",
       import: "default",
     })
   ) as string[],
   gear: Object.values(
-    import.meta.glob("./assets/gear/*.png", {
+    import.meta.glob("../assets/gear/*.png", {
       eager: true,
       query: "?url",
       import: "default",
     })
   ) as string[],
   montero: Object.values(
-    import.meta.glob("./assets/montero/*.png", {
+    import.meta.glob("../assets/montero/*.png", {
       eager: true,
       query: "?url",
       import: "default",
     })
   ) as string[],
   protection: Object.values(
-    import.meta.glob("./assets/protection/*.png", {
+    import.meta.glob("../assets/protection/*.png", {
       eager: true,
       query: "?url",
       import: "default",
     })
   ) as string[],
   sotillo: Object.values(
-    import.meta.glob("./assets/sotillo/*.png", {
+    import.meta.glob("../assets/sotillo/*.png", {
       eager: true,
       query: "?url",
       import: "default",
     })
   ) as string[],
   weapons: Object.values(
-    import.meta.glob("./assets/weapons/*.png", {
+    import.meta.glob("../assets/weapons/*.png", {
       eager: true,
       query: "?url",
       import: "default",

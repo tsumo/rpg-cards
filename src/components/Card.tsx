@@ -2,6 +2,7 @@ import { CSSProperties, ReactNode, useId, useMemo } from "react";
 import useMeasure from "react-use-measure";
 import clsx from "clsx";
 import { Text } from "./Text";
+import { SvgPath } from "../utils/svgPath";
 import s from "./Card.module.css";
 
 const long = 870;
@@ -14,37 +15,29 @@ const cornerOffset = 30;
 const headingHeight = 50;
 
 const createPath = (width: number, height: number, headingWidth: number) => {
-  const points: { x: number; y: number }[] = [];
-
-  // heading start
-  points.push({
-    x: width - edgeOffset - cornerOffset - headingWidth,
-    y: edgeOffset,
-  });
-  // top right corner
-  points.push({ x: width - edgeOffset - cornerOffset, y: edgeOffset });
-  points.push({ x: width - edgeOffset, y: edgeOffset + cornerOffset });
-  // bottom right corner
-  points.push({ x: width - edgeOffset, y: height - edgeOffset - cornerOffset });
-  points.push({ x: width - edgeOffset - cornerOffset, y: height - edgeOffset });
-  // bottom left corner
-  points.push({ x: edgeOffset + cornerOffset, y: height - edgeOffset });
-  points.push({ x: edgeOffset, y: height - edgeOffset - cornerOffset });
-  // top left corner
-  points.push({ x: edgeOffset, y: edgeOffset + cornerOffset + headingHeight });
-  points.push({ x: edgeOffset + cornerOffset, y: edgeOffset + headingHeight });
-  // line to heading
-  points.push({
-    x: width - edgeOffset - cornerOffset - headingWidth - headingHeight,
-    y: edgeOffset + headingHeight,
-  });
-
-  const path = points.reduce((prev, curr, i) => {
-    if (i === 0) return `M ${curr.x} ${curr.y}`;
-    return `${prev} L ${curr.x} ${curr.y}`;
-  }, "");
-
-  return `${path} Z`;
+  return (
+    new SvgPath()
+      // heading start
+      .M(width - edgeOffset - cornerOffset - headingWidth, edgeOffset)
+      // top right corner
+      .L(width - edgeOffset - cornerOffset, edgeOffset)
+      .L(width - edgeOffset, edgeOffset + cornerOffset)
+      // bottom right corner
+      .L(width - edgeOffset, height - edgeOffset - cornerOffset)
+      .L(width - edgeOffset - cornerOffset, height - edgeOffset)
+      // bottom left corner
+      .L(edgeOffset + cornerOffset, height - edgeOffset)
+      .L(edgeOffset, height - edgeOffset - cornerOffset)
+      // top left corner
+      .L(edgeOffset, edgeOffset + cornerOffset + headingHeight)
+      .L(edgeOffset + cornerOffset, edgeOffset + headingHeight)
+      // line to heading
+      .L(
+        width - edgeOffset - cornerOffset - headingWidth - headingHeight,
+        edgeOffset + headingHeight
+      )
+      .Z()
+  );
 };
 
 const pathThickness = 5;
