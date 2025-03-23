@@ -70,9 +70,25 @@ export const CardBox = ({ title, thickness }: CardBoxProps) => {
         stroke="black"
       >
         {/* back */}
-        <rect x={0} y={0} width={thickness} height={long} />
-        <rect x={thickness} y={0} width={short} height={long} />
-        <rect x={thickness + short} y={0} width={thickness} height={long} />
+        <path
+          d={new SvgPath()
+            .M(thickness, long)
+            .L(0, long)
+            .L(0, 0)
+            .L(thickness + short + thickness, 0)
+            .L(thickness + short + thickness, long)
+            .L(thickness + short, long)
+            .finish()}
+        />
+        <path
+          d={new SvgPath()
+            .M(thickness, 0)
+            .L(thickness, long)
+            .L(thickness + short, long)
+            .L(thickness + short, 0)
+            .finish()}
+          strokeDasharray="3mm"
+        />
 
         {/* bottom */}
         <path
@@ -81,7 +97,25 @@ export const CardBox = ({ title, thickness }: CardBoxProps) => {
             .l(thickness * sideFlapCoef, -thickness)
             .finish()}
         />
-        <rect x={thickness} y={long} width={short} height={thickness} />
+        <path
+          d={new SvgPath()
+            .M(thickness, long)
+            .L(thickness, long + thickness)
+            .finish()}
+        />
+        <path
+          d={new SvgPath()
+            .M(0, long + thickness)
+            .L(thickness + short + thickness, long + thickness)
+            .finish()}
+          strokeDasharray="3mm"
+        />
+        <path
+          d={new SvgPath()
+            .M(thickness + short, long)
+            .L(thickness + short, long + thickness)
+            .finish()}
+        />
         <path
           d={new SvgPath()
             .M(thickness + short + thickness, long + thickness)
@@ -90,34 +124,74 @@ export const CardBox = ({ title, thickness }: CardBoxProps) => {
         />
 
         {/* front */}
-        <rect x={0} y={long + thickness} width={thickness} height={long} />
-        <rect x={thickness} y={long + thickness} width={short} height={long} />
-        <rect
-          x={thickness + short}
-          y={long + thickness}
-          width={thickness}
-          height={long}
+        <path
+          d={new SvgPath()
+            .M(0, long + thickness)
+            .L(0, long + thickness + long)
+            .finish()}
+        />
+        <path
+          d={new SvgPath()
+            .M(thickness, long + thickness)
+            .L(thickness, long + thickness + long)
+            .finish()}
+          strokeDasharray="3mm"
+        />
+        <path
+          d={new SvgPath()
+            .M(0, long + thickness + long)
+            .L(thickness + short + thickness, long + thickness + long)
+            .finish()}
+          strokeDasharray="3mm"
+        />
+        <path
+          d={new SvgPath()
+            .M(thickness + short, long + thickness)
+            .L(thickness + short, long + thickness + long)
+            .finish()}
+          strokeDasharray="3mm"
+        />
+        <path
+          d={new SvgPath()
+            .M(thickness + short + thickness, long + thickness)
+            .L(thickness + short + thickness, long + thickness + long)
+            .finish()}
         />
 
         {/* top */}
         <path
           d={new SvgPath()
             .M(0, long + thickness + long)
-            .l(thickness * sideFlapCoef, thickness)
-            .l(thickness * (1 - sideFlapCoef), 0)
+            .l(thickness * (sideFlapCoef * 0.1), thickness * 0.3)
+            .l(thickness * (sideFlapCoef * 0.9), thickness * 0.7)
+            .L(thickness, long + thickness + long + thickness)
             .finish()}
         />
-        <rect
-          x={thickness}
-          y={long + thickness + long}
-          width={short}
-          height={thickness}
+        <path
+          d={new SvgPath()
+            .M(thickness, long + thickness + long)
+            .L(thickness, long + thickness + long + thickness)
+            .finish()}
+        />
+        <path
+          d={new SvgPath()
+            .M(thickness, long + thickness + long + thickness)
+            .L(thickness + short, long + thickness + long + thickness)
+            .finish()}
+          strokeDasharray="3mm"
+        />
+        <path
+          d={new SvgPath()
+            .M(thickness + short, long + thickness + long)
+            .L(thickness + short, long + thickness + long + thickness)
+            .finish()}
         />
         <path
           d={new SvgPath()
             .M(thickness + short + thickness, long + thickness + long)
-            .l(-thickness * sideFlapCoef, thickness)
-            .l(-thickness * (1 - sideFlapCoef), 0)
+            .l(-thickness * (sideFlapCoef * 0.1), thickness * 0.3)
+            .l(-thickness * (sideFlapCoef * 0.9), thickness * 0.7)
+            .L(thickness + short, long + thickness + long + thickness)
             .finish()}
         />
 
